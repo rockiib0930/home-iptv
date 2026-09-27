@@ -13,7 +13,7 @@ class PlaylistStore: ObservableObject {
     /// 默认订阅地址（部署完 GitHub Pages 后换成你自己的）
     /// 占位：https://YOUR_USERNAME.github.io/home-iptv/hd.m3u
     /// 局域网调试可换成：http://192.168.3.210:8000/hd.m3u
-    @AppStorage("playlistURL") var playlistURL = "https://rockiib0930.github.io/home-iptv/out/index.m3u"
+    @AppStorage("playlistURL") var playlistURL = "https://cdn.jsdelivr.net/gh/rockiib0930/home-iptv@main/out/index.m3u"
 
     @Published var channels: [Channel] = []
     @Published var groups: [String] = []
