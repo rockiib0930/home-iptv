@@ -1,0 +1,19 @@
+﻿# Xcode
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+build/
+*.app
+*.dsym
+# Python
+__pycache__/
+*.pyc
+# 本地产物
+out/
+*.ips
+*.png
+*.jpg
+*.jpeg
+.DS_Store
+*.tar.gz
