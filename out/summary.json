@@ -1,0 +1,9 @@
+{
+  "generated_at": 1790533069,
+  "upstream_count": 4,
+  "total_dedup": 11118,
+  "alive": 8136,
+  "dead": 2982,
+  "avg_ms_alive": 605.2,
+  "quick_mode": false
+}
