@@ -10,7 +10,7 @@ build/
 __pycache__/
 *.pyc
 # 本地产物
-out/
+# out/
 *.ips
 *.png
 *.jpg
