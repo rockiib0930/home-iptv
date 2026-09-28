@@ -1,202 +1,202 @@
 # 被标记不可用的频道（前 200 条，调试用）
 
-- like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="General",1+1 International (http://158.101.222.193:88/georgia_play.php?id=1plus1international) ms=99999 err=URLError
-- 2M Monde (360p) (https://cdn-globecast.akamaized.net/live/eds/2m_monde/hls_video_ts_tuhawxpiemz25) ms=99999 err=HTTPError
-- 2x2 (576i) (https://bl.rutube.ru/livestream/392b4686b770bae2da6bf5ac4574add5/index.m3u8?e=20) ms=4550 err=
-- 3ABN TV Uganda (720p) [Not 24/7] (https://3abn.bozztv.com/3abn/3abn_uganda_live/index.m3u8) ms=99999 err=HTTPError
-- 3Cat Exclusiu 1 (1080p) [Geo-blocked] (https://directes-tv-cat.3catdirectes.cat/live-content/oca1-hls/master.m3u8) ms=99999 err=HTTPError
-- 3Cat Exclusiu 2 (1080p) [Geo-blocked] (https://directes-tv-cat.3catdirectes.cat/live-content/oca2-hls/master.m3u8) ms=99999 err=HTTPError
-- 3Cat Exclusiu 3 (1080p) [Geo-blocked] (https://directes-tv-cat.3catdirectes.cat/live-content/oca3-hls/master.m3u8) ms=99999 err=HTTPError
-- 3 Stones TV (240p) [Not 24/7] (https://goliveafrica.media:9998/live/64d21e682fd26/index.m3u8) ms=99999 err=HTTPError
-- 4E (1080p) (http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8) ms=4280 err=
-- 5Gold (1080p) (http://str2.iptvhd.ru:8080/sport5gold/index.m3u8) ms=99999 err=HTTPError
-- 5Live (1080p) (http://str2.iptvhd.ru:8080/5live/index.m3u8) ms=99999 err=HTTPError
-- 5Plus (1080p) (http://89.33.29.115:8080/sportplus/index.m3u8) ms=99999 err=HTTPError
-- 5 Plus (720p) (https://mmtvs.exliatycl.online/5plus/stream.m3u8) ms=99999 err=HTTPError
-- 5Sport 4K (2160p) (http://str2.iptvhd.ru:8080/5SPORT_4K/index.m3u8) ms=99999 err=HTTPError
-- 5Sport (1080p) (http://str2.iptvhd.ru:8080/5sport/index.m3u8) ms=99999 err=HTTPError
-- 5Stars (1080p) (http://89.33.29.115:8080/IL_5Stars/index.m3u8) ms=99999 err=HTTPError
-- 6ter (1080p) (http://145.239.5.177/314/index.m3u8) ms=99999 err=HTTPError
-- like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Entertainment",7/8 TV (http://213.91.179.28:8000/play/a0cn) ms=99999 err=HTTPError
-- 7 Gold (1080p) (https://streamcdnr6-dddfac816632463dac50b21109dc1bb3.msvdn.net/live/S58803518/OO) ms=99999 err=HTTPError
-- 7 News (720p) (https://sscsott.com/7news/live/index.m3u8) ms=99999 err=TimeoutError
-- 8XM (576p) (http://115.42.65.142:9981/stream/channelid/582886861) ms=99999 err=URLError
-- 9Gem (720p) [Geo-blocked] (https://9now-livestreams.akamaized.net/hls/live/2008311/gem-syd/master.m3u8) ms=99999 err=HTTPError
-- 9Go! (720p) [Geo-blocked] (https://9now-livestreams.akamaized.net/hls/live/2008312/go-syd/master.m3u8) ms=99999 err=HTTPError
-- 9 la Loma TV (1080p) [Geo-blocked] (https://9laloma.tv/live.m3u8) ms=99999 err=HTTPError
-- 9Life (720p) [Geo-blocked] (https://9now-livestreams.akamaized.net/hls/live/2008313/life-syd/master.m3u8) ms=99999 err=HTTPError
-- 13Rec (576p) (http://45.4.1.201:8000/play/a11i/index.m3u8) ms=99999 err=URLError
-- 15+ Music (1080p) (https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8) ms=99999 err=URLError
-- 20 [Geo-blocked] (https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/) ms=99999 err=URLError
-- 24 Horas (Chile) (1080p) (http://cdn1tlinkgo.tlink.cl/24horashd/mono.m3u8) ms=99999 err=URLError
-- 24 Horas (Spain) (720p) (https://ztnr.rtve.es/ztnr/1694255.m3u8) ms=99999 err=HTTPError
-- 24 Horas Canarias (1080p) (http://185.47.212.25:8080/24h_HD/index.m3u8) ms=99999 err=HTTPError
-- 24 Horas Catalunya (720p) (https://ztnr.rtve.es/ztnr/4952053.m3u8) ms=99999 err=HTTPError
-- 24Kitchen Bulgary (1080p) (http://hls127.freeott.top:8080/BG_24_Kitchen/video.m3u8) ms=99999 err=TimeoutError
-- 100% Auto Moto TV (406p) [Not 24/7] (http://100automoto.tv:1935/bgtv1/autotv/playlist.m3u8) ms=99999 err=URLError
-- like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="General",101tv Antequera [Geo-blocked] (https://liveingesta318.cdnmedia.tv/101weblive/smil:antequera.smil/playlist.m3u8) ms=99999 err=HTTPError
-- 101tv Cadiz (1080p) (https://streaming101tv.es:19360/cadiz/cadiz.m3u8) ms=99999 err=HTTPError
-- 101tv Malaga (https://liveingesta318.cdnmedia.tv/101weblive/smil:malaga.smil/playlist.m3u8) ms=99999 err=HTTPError
-- 101tv Sevilla (https://liveingesta318.cdnmedia.tv/101weblive/smil:sevilla.smil/playlist.m3u8) ms=99999 err=HTTPError
-- 312 Kino (406p) (http://176.126.166.43:1935/live/312kino/playlist.m3u8) ms=99999 err=URLError
-- 312 TV (406p) (http://176.126.166.43:1935/live/312musik/playlist.m3u8) ms=99999 err=URLError
-- 1001 Noites (720p) [Not 24/7] (https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8) ms=99999 err=HTTPError
-- ¡OPA! (720p) (https://5f1af61612fb5.streamlock.net/genteopa/videogenteopa_720p/playlist.m3u8) ms=99999 err=HTTPError
-- &xplor HD (1080p) [Geo-blocked] (http://dksmedia.tv/play/live.php?mac=00:1A:79:B6:60:3D&stream=209743&extension=t) ms=99999 err=HTTPError
-- +TV (576p) [Geo-blocked] (https://stream.plustv.by/plustv-web/plustv/playlist.m3u8) ms=99999 err=URLError
-- :24 (1080p) (http://88.212.15.27/live/test_trojka_25p/playlist.m3u8) ms=99999 err=TimeoutError
-- A1 (576p) (http://31.148.48.15/A1/index.m3u8) ms=99999 err=URLError
-- A2 (576p) (http://str2.iptvhd.ru:8080/Amedia_2/index.m3u8) ms=99999 err=HTTPError
-- A2i Music (720p) [Not 24/7] (https://stream.sen-gt.com/A2iMusic/myStream/playlist.m3u8) ms=99999 err=HTTPError
-- A2i Naija (720p) [Not 24/7] (https://stream.sen-gt.com/A2iNaija/myStream/playlist.m3u8) ms=99999 err=HTTPError
-- A-Plus TV (576p) (http://115.42.65.142:9981/stream/channelid/113328724) ms=99999 err=URLError
-- Aaj Entertainment (1080p) (https://ml-pull-dvc-myco.io:2096/AAJ_ENTERTAINMENT/index.m3u8) ms=99999 err=URLError
-- Aaj News (576p) (http://115.42.65.142:9981/stream/channelid/750987367) ms=99999 err=URLError
-- Aaj Tak (1080p) (http://103.213.31.109:90/AajtakHD/playlist.m3u8) ms=99999 err=URLError
-- like Gecko) Chrome/147.0.0.0 Safari/537.36" group-title="Religious",Aastha (576p) (http://103.175.73.12:8080/live/338/master.m3u8) ms=99999 err=URLError
-- like Gecko) Chrome/147.0.0.0 Safari/537.36" group-title="Religious",Aastha Bhajan (576p) (http://103.175.73.12:8080/live/339/master.m3u8) ms=99999 err=URLError
-- Aathavan TV (720p) [Not 24/7] (http://45.77.66.224:1935/athavantv/live/playlist.m3u8) ms=99999 err=URLError
-- AB1 (720p) (http://145.239.5.177/332/index.m3u8) ms=99999 err=HTTPError
-- Abb Takk (576p) (http://115.42.65.142:9981/stream/channelid/852828604) ms=99999 err=URLError
-- ABC WJLA-TV (1080p) (https://linear-681.frequency.stream/dist/stirr/681/hls/master/playlist.m3u8) ms=99999 err=HTTPError
-- ABC WLOS (1080p) (https://linear-695.frequency.stream/dist/stirr/695/hls/master/playlist.m3u8) ms=99999 err=HTTPError
-- ABC WPDE-TV (1080p) (https://linear-696.frequency.stream/dist/stirr/696/hls/master/playlist.m3u8) ms=99999 err=HTTPError
-- ABC WSYX (1080p) (https://linear-689.frequency.stream/dist/stirr/689/hls/master/playlist.m3u8) ms=99999 err=HTTPError
-- ABC Teleshow (720p) (https://live-evg10.tv360.bitel.com.pe/bitel/abctv/playlist.m3u8) ms=99999 err=HTTPError
-- ABN News (1080p) (http://115.42.65.142:9981/stream/channelid/966869781) ms=99999 err=URLError
-- Abya Yala TV (720p) (http://15.204.246.24:8080/AbyaYalaTvHD/index.m3u8) ms=99999 err=HTTPError
-- AC TV (480p) [Not 24/7] (https://ssh101stream.ssh101.com/akamaissh101/ssh101/actvstream/playlist.m3u8) ms=99999 err=URLError
-- Access 4 PAC (https://reflect-channel18vod-springfield-il-us.cablecast.tv/live-16/live/stream-) ms=99999 err=HTTPError
-- Access 19 (https://reflect-montgomerycommunitymedia.cablecast.tv/live-8/live/stream-3/live.) ms=99999 err=HTTPError
-- Access Sacramento Channel 17 (https://reflect-access-sacramento.cablecast.tv/live-7/live/live.m3u8) ms=99999 err=HTTPError
-- Access Tuolumne (720p) (https://reflect-tuolumne.cablecast.tv/live-3/live/stream-1/live.m3u8) ms=99999 err=HTTPError
-- Acustik TV (https://s5.mexside.net:1936/clientetv/clientetv/playlist.m3u8) ms=99999 err=HTTPError
-- ACW UG TV (480p) (https://live.acwugtv.com/hls/stream.m3u8) ms=99999 err=URLError
-- Addis TV (720p) (https://rrsatrtmp.tulix.tv/addis1/addis1multi.smil/playlist.m3u8) ms=99999 err=URLError
-- Adjarasport 1 (https://live20.bozztv.com/dvrfl05/gin-adjara/index.m3u8) ms=99999 err=HTTPError
-- Adnkronos (720p) (https://5e73cf528f404.streamlock.net/GR_sport/livestream/playlist.m3u8) ms=99999 err=URLError
-- ADO TV (720p) (https://strhls.streamakaci.tv/ortb/ortb2-multi/playlist.m3u8) ms=99999 err=HTTPError
-- Adria Music Television (https://adriaapp.b-cdn.net/1080p/index.m3u8) ms=99999 err=URLError
-- Advocate Broadcasting Network (srt://105.113.54.98:4001) ms=99999 err=
-- Afaq TV (https://stream.afaq.iq/live/channel/afaqtv/playlist.m3u8) ms=99999 err=URLError
-- AFBTV Kupang (1080p) [Not 24/7] (https://afbtv.siar.us/live/afbtv.m3u8) ms=99999 err=HTTPError
-- Afghan Nobel Movies (720p) (https://live.relentlessinnovations.net:1936/afghannobel/afghannobel/playlist.m3u) ms=99999 err=URLError
-- Afghan Nobel TV (720p) (https://live.relentlessinnovations.net:1936/afghannobeltv/afghannobeltv/playlist) ms=99999 err=URLError
-- Afra Series (https://afrashls.wns.live/hls/stream.m3u8) ms=99999 err=HTTPError
-- Africa TV3 (720p) [Not 24/7] (http://africatv.live.net.sa:1935/live/africatv3/playlist.m3u8) ms=99999 err=HTTPError
-- Afrique54 TV (720p) (https://video1.getstreamhosting.com:1936/8318/8318/playlist.m3u8) ms=99999 err=HTTPError
-- Afrique Media (720p) (https://cloud.odysee.live/content/fe06b3cdc9412e359368b2455b6ea5e93856e382/maste) ms=99999 err=HTTPError
-- AFV Espanol (720p) [Not 24/7] (https://linear-46.frequency.stream/dist/plex/46/hls/master/playlist.m3u8) ms=99999 err=URLError
-- Agro TV (Peru) (720p) (https://live-evg8.tv360.bitel.com.pe/bitel/agroSRT/playlist.m3u8) ms=99999 err=HTTPError
-- AgroBrasil TV (720p) [Not 24/7] (http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8) ms=99999 err=URLError
-- AION TV (1080p) [Not 24/7] (https://edge.essastream.com/aiontelevision/playlist.m3u8) ms=99999 err=TimeoutError
-- Ajwa TV (1080p) (http://ikitv.sqn.at:8000/play/a00j/index.m3u8) ms=99999 err=HTTPError
-- AKTV (1080p) [Not 24/7] (https://akativi.siar.us/live/akativi.m3u8) ms=99999 err=HTTPError
-- Al Jazeera Documentary (1080p) [Geo-blocked] (https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8) ms=99999 err=HTTPError
-- Al Quran Al Kareem TV (720p) (http://m.live.net.sa:1935/live/quran/gmswf.m3u8) ms=99999 err=HTTPError
-- Al Rasheed TV (1080p) [Not 24/7] (https://media1.livaat.com/static/AL-RASHEED-HD/playlist.m3u8) ms=99999 err=HTTPError
-- Al Resalah (1080p) [Geo-blocked] (https://rotana.hibridcdn.net/rotananet/risala_net-7Y83PP5adWixDF93/playlist.m3u8) ms=99999 err=HTTPError
-- Al Sunnah Al Nabawiyah TV (720p) (http://m.live.net.sa:1935/live/sunnah/gmswf.m3u8) ms=99999 err=HTTPError
-- Al-Iman TV (Indonesia) (720p) (https://tv.aliman.id/aliman/live.m3u8) ms=99999 err=HTTPError
-- Al-Naeem TV (http://37.238.136.61/hls/stream.m3u8) ms=99999 err=HTTPError
-- Al-Rafidain TV (720p) [Not 24/7] (https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8) ms=99999 err=HTTPError
-- Ala-Too 24 (480p) [Not 24/7] (https://st2.mediabay.tv/KG_KTRK-Ala-too/playlist.m3u8) ms=99999 err=HTTPError
-- Alabama Weather Network (720p) (https://alwxnet-ott-proxy.cloud9streaming.com/alwxnet/live/playlist.m3u8) ms=99999 err=HTTPError
-- Alb UK TV (1080p) (http://5.254.89.106/8794/index.m3u8) ms=99999 err=HTTPError
-- Albanian TV America (1080p) (http://5.254.89.106/8711/index.m3u8) ms=99999 err=HTTPError
-- Alcance TV (Venezuela) (720p) (https://rv100.globalhost1.com:3516/live/tjjqdqurlive.m3u8) ms=99999 err=URLError
-- Alegria TV (720p) (https://lbgo.bozztv.com/ssh101/ssh101/confirmatv/playlist.m3u8) ms=99999 err=HTTPError
-- Alerta Bogota (720p) [Geo-blocked] (https://mdstrm.com/live-stream-playlist/69b2cdf98815b9b6c48c2532.m3u8) ms=99999 err=HTTPError
-- Alfa & Omega Vision (480p) [Not 24/7] (https://srv.panelcast.net/dorian/dorian/playlist.m3u8) ms=99999 err=URLError
-- Alfa Sport (1080p) [Not 24/7] (https://dev.aftermind.xyz/edge-hls/unitrust/alfasports/index.m3u8?token=8TXWzhY3) ms=99999 err=HTTPError
-- Alhurra (720p) (https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038900/MBN_Alhurra_Worldsaf) ms=99999 err=URLError
-- Alhurra Iraq (720p) (https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038899/MBN_Iraq_Worldsafe_H) ms=99999 err=URLError
-- Alikhbaria Syria (1080p) (http://185.9.2.18/chid_423/index.m3u8) ms=99999 err=HTTPError
-- All Time Movies (576p) (https://tvsen6.aynaott.com/a2cKGQtB/index.m3u8) ms=99999 err=HTTPError
-- Alma TV (576p) (http://151.0.207.99:1935/AlmaTv/AlmaTv/playlist.m3u8) ms=99999 err=URLError
-- Alpha Channel (720p) (https://5b01a3d32b65c.streamlock.net:1936/tvalpha/tvalpha/playlist.m3u8) ms=99999 err=URLError
-- alpha Cinema (1080p) (https://live.15plusmg.ru/memfs/b389173a-df4e-4171-8904-e249893e71eb.m3u8) ms=99999 err=URLError
-- Alpo TV (https://vs.sednastream.com:1936/alportv/alportv/playlist.m3u8) ms=99999 err=HTTPError
-- Alsat (576p) (http://5.254.89.106/8713/index.m3u8) ms=99999 err=HTTPError
-- Alt Media TV (https://video.hostingcaaguazu.com:19360/altmedia/altmedia.m3u8) ms=99999 err=HTTPError
-- Altenburg TV (1080p) (https://58de7a369a9c4.streamlock.net/abgtv/abgtv_1080p/playlist.m3u8) ms=99999 err=URLError
-- Althingi (1080p) [Not 24/7] (https://althingi-live.secure.footprint.net/althingi/live/index.m3u8) ms=99999 err=URLError
-- Altura TV (720p) (https://live-evg10.tv360.bitel.com.pe/bitel/urbanatv/playlist.m3u8) ms=99999 err=HTTPError
-- ALTV (1080p) (https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_1080p/index.m3u8) ms=99999 err=HTTPError
-- Amarin TV (https://lb1-live-mv.v2h-cdn.com/hls/ffad/vibomi/vibomi.m3u8) ms=99999 err=HTTPError
-- Amazonia TV (https://servilive.com:3199/live/amazoniatvlive.m3u8) ms=99999 err=HTTPError
-- AMC en Espanol (https://amc-amcespanol-1-us.lg.wurl.tv/playlist.m3u8) ms=99999 err=URLError
-- AMC Europe Bulgary (576p) (http://hls127.freeott.top:8080/BG_AMC/video.m3u8) ms=99999 err=TimeoutError
-- like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18" group-title="Movies",AMC Europe Romania (https://iron1.jarvisx1.cfd/amece/usergenrx3oq1kr.m3u8) ms=99999 err=HTTPError
-- Amedia Premium (720p) (http://31.148.48.15/Amedia_Premium_HD/index.m3u8) ms=99999 err=URLError
-- America Television (1080p) (http://45.171.108.253:8888/AMERICA/index.m3u8) ms=99999 err=HTTPError
-- AMusic Channel (720p) (http://mn-nl.mncdn.com/amusictv/amusicsrt.stream/playlist.m3u8) ms=99999 err=ConnectionResetError
-- An Ninh TV HD (1080p) (https://liveh12.vtvprime.vn/hls/ANNINHTV/index.m3u8) ms=99999 err=HTTPError
-- Ananda TV (480p) (http://103.99.249.139/anandatv/index.m3u8) ms=99999 err=HTTPError
-- Andina RTV (720p) (https://live-evg8.tv360.bitel.com.pe/bitel/andinatvSRT/playlist.m3u8) ms=99999 err=HTTPError
-- AnewZ TV (https://53be5ef2d13aa.streamlock.net/cubesanewz-secure/smil:cubesanewz-secure-we) ms=99999 err=HTTPError
-- ANIMAL KINGDOM (720p) (https://cdn6.goprimetime.info/feed/202306140918/LC18/index.m3u8) ms=99999 err=URLError
-- Anime Vision (1080p) (https://d1ujfw1zyymzyd.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68) ms=99999 err=HTTPError
-- Anime Vision Classics (1080p) (https://d82pyvmcw2kdc.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a) ms=99999 err=HTTPError
-- Anixe + (360p) (https://ma.anixa.tv/clips/stream/anixesd/index.m3u8) ms=99999 err=HTTPError
-- Anixe HD Serie (360p) (https://ma.anixa.tv/clips/stream/anixehd/index.m3u8) ms=99999 err=HTTPError
-- ANT1 (1080p) [Geo-blocked] (https://mcdn.antennaplus.gr/live/media0/Ant1/HLS/Ant1.m3u8) ms=99999 err=HTTPError
-- Antena 3 Internacional (http://177.10.184.193:8000/play/a06a/index.m3u8) ms=99999 err=URLError
-- Antena 7 (480p) (https://alba-do-antena7-antena7.stream.mediatiquestream.com/index.m3u8) ms=99999 err=URLError
-- Antena 21 (480p) (https://alba-do-antena7-c21.stream.mediatiquestream.com/index.m3u8) ms=99999 err=URLError
-- Antenna Sud (720p) (https://live.antennasudwebtv.it:9443/hls/vod.m3u8) ms=99999 err=URLError
-- Antenna Sud Extra (720p) (https://live.antennasudwebtv.it:9443/hls/vod92.m3u8) ms=99999 err=URLError
-- Antenna Tre (480p) [Geo-blocked] (https://59d8c0cee6f3d.streamlock.net/antennatreveneto/antennatreveneto.stream/pl) ms=99999 err=URLError
-- Antenne A (http://51.254.199.122:8080/antenne_a-plus/index.m3u8) ms=99999 err=URLError
-- Antenne Vorarlberg (720p) [Not 24/7] (https://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livest) ms=99999 err=URLError
-- like Gecko) Chrome/65.0.3325.181 Safari/537.36" group-title="General",ANTV (Indonesia) (720p) (http://103.58.160.157:8278/720-ANTV/playlist.m3u8) ms=99999 err=TimeoutError
-- Anwar TV2 (720p) (https://cloud.odysee.live/content/f92670235a1ce2bce4cf77671cc4dcc2188baa1d/maste) ms=99999 err=HTTPError
-- Anzoategui TV (360p) [Not 24/7] (https://vcp2.myplaytv.com/anzoateguitv/anzoateguitv/playlist.m3u8) ms=99999 err=HTTPError
-- Apna Channel (576p) (http://115.42.65.142:9981/stream/channelid/1273966657) ms=99999 err=URLError
-- Apostrophe TV (1080p) (https://ext.cdn.nashnet.tv/228.0.2.165/index.m3u8) ms=99999 err=HTTPError
-- Aqjaiyq (576p) (https://stream.kaztrk.kz/regional/oraltv/index.m3u8) ms=99999 err=HTTPError
-- Aqtobe (576p) (https://stream.kaztrk.kz/regional/aktobetv/index.m3u8) ms=99999 err=HTTPError
-- Aradana TV (576p) (https://mumbai-edge.smartplaytv.in/AradanaTV/index.m3u8) ms=99999 err=HTTPError
-- Aragon TV Internacional (720p) [Not 24/7] (https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8) ms=99999 err=URLError
-- Arbol de Vida TV (240p) [Not 24/7] (https://yupistream.top:19360/livearbol/livearbol.m3u8) ms=99999 err=URLError
-- like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Sports",Arena Sport 5 Premium (https://nl1.nghk.ai/SK2SRHD/index.m3u8) ms=99999 err=HTTPError
-- like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Arena Sport Premium M1 (https://racitonsen.s.gy/AM1P) ms=99999 err=HTTPError
-- like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Arena Sport Premium M2 (https://racitonsen.s.gy/AM2P) ms=99999 err=HTTPError
-- like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Arena Sport Premium M3 (https://racitonsen.s.gy/AM3P) ms=99999 err=HTTPError
-- Aristo TV (360p) (https://ma.anixa.tv/clips/stream/aristo/index.m3u8) ms=99999 err=HTTPError
-- Arktika 24 (1080p) (https://vgtrkregion-reg.cdnvideo.ru/vgtrk/arhangelsk/arktika24-hd/index.m3u8) ms=99999 err=URLError
-- Arlaadi TV (https://ap02.iqplay.tv:8082/iqb8002/alr114iapp/playlist.m3u8) ms=99999 err=URLError
-- Armenia 1 (1080p) (https://ifl01eu-new.bozztv.com/am1abr/index.m3u8) ms=99999 err=HTTPError
-- Arpegio TV (720p) (https://live-evg8.tv360.bitel.com.pe/bitel/arpegioSRT/playlist.m3u8) ms=99999 err=HTTPError
-- ART (Greece) (1080p) (https://rumble.com/live-hls-dvr/78ixwi/playlist.m3u8) ms=99999 err=HTTPError
-- ART (Russia) (576p) (http://89.104.114.24:8080/art/index.m3u8) ms=99999 err=URLError
-- ART TV (https://rtmp.win:3696/live/arttvgrlive.m3u8) ms=99999 err=HTTPError
-- arte (France) (720p) (http://145.239.5.177/300/index.m3u8) ms=99999 err=HTTPError
-- arte (Germany) (720p) [Geo-blocked] (https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8) ms=99999 err=HTTPError
-- ARTN TV (1080p) [Not 24/7] (https://streamer1.connectto.com/ARTN_mobile/index.m3u8) ms=99999 err=HTTPError
-- ARTV (Chile) (720p) (http://45.162.193.35/ARTV/index.m3u8) ms=99999 err=HTTPError
-- ARY Musik (1080p) (https://arymusik.aryzap.com/3fd38b2c62d0c3bbd74aedabb533c03a/6459fa78/v1/01847ac) ms=99999 err=HTTPError
-- ARY News (https://cdn07lhr.tamashaweb.com:8087/jazzauth/vsat-arynews-abr/live/vsat-arynews) ms=99999 err=HTTPError
-- Aryen TV (1080p) [Not 24/7] (https://aryen.tv/live/tv/playlist.m3u8) ms=99999 err=URLError
-- As Contenidos (720p) (https://master.tucableip.com/ascontenido/index.m3u8) ms=99999 err=TimeoutError
-- Asi Sucede Guanajuato (720p) [Not 24/7] (https://stream.oursnetworktv.com/latin/encoder13/playlist.m3u8) ms=99999 err=HTTPError
-- Asia TV (720p) (https://stream.asiatvnet.com/1/live/master.m3u8) ms=99999 err=HTTPError
-- AsiriTV (720p) [Not 24/7] (https://video2.lhdserver.es/asiritv/live.m3u8) ms=99999 err=HTTPError
-- Astha TV (1080p) [Not 24/7] (https://hgmtv.com:19360/asthatv/asthatv.m3u8) ms=99999 err=HTTPError
-- Astra TV (1080p) (https://server.gointernet.gr/live/livestream.m3u8) ms=99999 err=HTTPError
-- Atabal TV (1080p) [Not 24/7] (https://vdopanel.jlahozconsulting.com:3648/live/atabaltvlive.m3u8) ms=99999 err=HTTPError
-- Atambua TV (720p) (http://122.248.43.242:1935/ATAMBUATV/_definst_/myStream/playlist.m3u8) ms=99999 err=HTTPError
-- Atlantis Radio TV (720p) (https://live-evg8.tv360.bitel.com.pe/bitel/atlantisSRT/playlist.m3u8) ms=99999 err=HTTPError
-- ATR (1080p) (http://stream.mcquack.net/244/index.m3u8) ms=99999 err=HTTPError
-- ATV (Austria) HD (1080p) (http://212.186.45.34:9981/stream/channelid/692531719?profile=pass) ms=99999 err=URLError
-- ATV (Belgium) (1080p) (https://live.zendzend.com/mpegts/29375_107244/media_mpegts_0.m3u8) ms=99999 err=HTTPError
-- ATV (Guinea) (400p) [Not 24/7] (https://guineetvdirect.online:3320/live/atvguineelive.m3u8) ms=99999 err=HTTPError
-- ATV (Hungary) (160p) (https://streamservers.atv.hu/atvlive/atvstream_1_aac/playlist.m3u8) ms=99999 err=URLError
-- ATV (Kosovo) (1080p) (http://5.254.89.106/8709/index.m3u8) ms=99999 err=HTTPError
-- ATV (Pakistan) (1080p) (http://115.42.65.142:9981/stream/channelid/299762256) ms=99999 err=URLError
-- ATV Avrupa (576p) (https://flask-api-hls-atvavrupahdtrkvz-live.onrender.com/hls_stream/master.m3u8) ms=99999 err=HTTPError
-- ATV Spirit (360p) (https://streamservers.atv.hu/atvliveedge/_definst_/atvstream_2_aac/playlist.m3u8) ms=99999 err=URLError
-- Atyray (720p) (https://stream.kaztrk.kz/regional/atyrautv/index.m3u8) ms=99999 err=HTTPError
-- Audaz TV (432p) [Not 24/7] (https://cloud2.streaminglivehd.com:1936/8264/8264/playlist.m3u8) ms=99999 err=HTTPError
-- Auge TV (720p) (https://cdn-tiva-video01-logicahost-com-br.smartbit.co/canalaugetv/canalaugetv/p) ms=99999 err=URLError
-- AuroraTV (720p) (https://reflect-aurora.cablecast.tv/live-8/live/live.m3u8) ms=99999 err=HTTPError
+- Beijing Satellite TV [Not 24/7] (http://ivi.bupt.edu.cn/hls/btv1.m3u8) ms=99999 err=URLError
+- Beijing Satellite TV HD (1080p) (http://go.bkpcp.top/mg/bjws) ms=99999 err=RemoteDisconnected
+- Bingtuan Satellite TV (540p) [Not 24/7] (http://112.25.48.68/live/program/live/btws/1300000/mnf.m3u8) ms=99999 err=URLError
+- BRTV Kaku Childrens Channel (http://223.111.191.105/downflv.brtvcloud.com/kkkkasd/winfr.m3u8) ms=99999 err=URLError
+- CCTV-5+ (https://myip.pdtvhd.com/Sports/streams/CCTV5pul.m3u8) ms=99999 err=HTTPError
+- CCTV-6 [Geo-blocked] (https://live.eac-news.com/CCTV/streams/cctv6.m3u8) ms=99999 err=HTTPError
+- CCTV-13 HD (1080p) (http://go.bkpcp.top/mg/cctv13) ms=99999 err=RemoteDisconnected
+- CETV-1 (576p) (http://117.161.133.51:81/gitv_live/G_CETV-1/G_CETV-1.m3u8?p=GITV) ms=99999 err=URLError
+- CETV-2 (576p) (http://117.161.133.51:81/gitv_live/G_CETV-2/G_CETV-2.m3u8?p=GITV) ms=99999 err=URLError
+- CHC Action (1080p) (http://39.134.19.68/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226465/index) ms=99999 err=URLError
+- CHC Home Theater (1080p) (http://39.134.19.153/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226462/inde) ms=99999 err=URLError
+- China Weather Channel (576p) [Not 24/7] (http://hls.weathertv.cn/tslslive/qCFIfHB/hls/live_sd.m3u8) ms=99999 err=URLError
+- Chuzhou News Channel (1080p) (http://live.cztv.cc:85/live/xwpd.m3u8) ms=99999 err=URLError
+- Chuzhou Public Channel (400p) (http://live.cztv.cc:85/live/ggpd.m3u8) ms=99999 err=URLError
+- Chuzhou Science & Education Channel (400p) (http://live.cztv.cc:85/live/sjpd.m3u8) ms=99999 err=URLError
+- CND Film Discovery Channel (576p) (http://125.210.152.18:9090/live/FXZL_750.m3u8) ms=99999 err=URLError
+- CND Film Middle School Channel (http://live2.rxip.sc96655.com/live/zxs_4000.m3u8?A=&E=&K=&P=&S=&U=) ms=99999 err=HTTPError
+- Documentary Humanities Channel (1080p) (http://39.135.138.59:18890/PLTV/88888910/224/3221225655/index.m3u8) ms=99999 err=URLError
+- Dunhuang TV (1080p) (http://117.156.28.119/270000001111/1110000028/index.m3u8) ms=99999 err=URLError
+- Fengshang Shopping Channel (1080p) (http://183.207.248.71/cntv/live1/fengshanggw/fengshanggw) ms=99999 err=URLError
+- Fujian Comprehensive Channel (http://120.39.52.202:5140/%E7%A6%8F%E5%BB%BA%E7%BB%BC%E5%90%88) ms=99999 err=URLError
+- Golden Eagle Cartoon (576p) (http://223.110.245.145/ott.js.chinamobile.com/PLTV/3/224/3221226303/index.m3u8) ms=99999 err=URLError
+- Guizhou TV (576p) (http://183.207.248.71/gitv/live1/G_GUIZHOU/G_GUIZHOU) ms=99999 err=URLError
+- Hebi News Channel (480p) [Not 24/7] (http://pili-live-hls.hebitv.com/hebi/hebi.m3u8) ms=99999 err=HTTPError
+- Heilongjiang TV (1080p) (http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8) ms=99999 err=URLError
+- Hezheng TV (http://117.156.28.119/270000001111/1110000149/index.m3u8) ms=99999 err=URLError
+- High Channel TV (1080p) (http://117.156.28.119/270000001111/1110000146/index.m3u8) ms=99999 err=URLError
+- Hunan News Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_346.m3u8) ms=99999 err=URLError
+- Hunan Politics & Law Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_348.m3u8) ms=99999 err=URLError
+- Hunan Womens Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_349.m3u8) ms=99999 err=URLError
+- Jiangsu City Channel (576p) (http://183.207.248.71/gitv/live1/G_JSCS/G_JSCS) ms=99999 err=URLError
+- Jiangsu Educational Channel (576p) (http://223.110.245.151/ott.js.chinamobile.com/PLTV/3/224/3221225923/index.m3u8) ms=99999 err=URLError
+- Jiangsu Movie Channel (576p) (http://223.110.243.134/PLTV/4/224/3221225937/index.m3u8) ms=99999 err=URLError
+- Jiangsu Public & News Channel (576p) (http://183.207.248.71/gitv/live1/G_JSGG/G_JSGG) ms=99999 err=URLError
+- Jiangsu Satellite TV (1080p) (http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226200/inde) ms=99999 err=URLError
+- Jiangsu Sports & Leisure Channel (576p) (http://183.207.248.71/gitv/live1/G_JSTY/G_JSTY) ms=99999 err=URLError
+- Jiangsu Variety Channel (576p) [Not 24/7] (http://183.207.248.71/gitv/live1/G_JSZY/G_JSZY) ms=99999 err=URLError
+- Jiangxi Children's Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv6.m3u8) ms=99999 err=HTTPError
+- Jiangxi City Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv2.m3u8) ms=99999 err=HTTPError
+- Jiangxi Economy & Life Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv3.m3u8) ms=99999 err=HTTPError
+- Jiangxi Movie Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv4.m3u8) ms=99999 err=HTTPError
+- Jiangxi Public & Agriculture Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv5.m3u8) ms=99999 err=HTTPError
+- Jiangxi TV (1080p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225705/index.m3u8) ms=99999 err=URLError
+- Jilin City Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/7e8474e6daea44ccaa5aa2300191439e/i) ms=99999 err=HTTPError
+- Jilin Lifestyle Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/0a76740c72b74fabae611845aa21e06a/i) ms=99999 err=TimeoutError
+- Jilin Movie Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/906341e6f19b4c4bacdc89941eb85d12/i) ms=99999 err=HTTPError
+- Jilin Rural Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/3ffc4824dce54b92be185555923ce382/i) ms=99999 err=HTTPError
+- Jiuquan TV News Comprehensive Channel (576p) (http://117.156.28.119/270000001111/1110000001/index.m3u8) ms=99999 err=URLError
+- Liangshan TV [Not 24/7] (http://118.122.2.29:9999/hls/47/index.m3u8) ms=99999 err=URLError
+- Liaoning TV (1080p) (http://39.134.39.37/PLTV/88888888/224/3221226209/index.m3u8) ms=99999 err=URLError
+- Nanchang News & Generalist Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_nanchang.m3u8) ms=99999 err=HTTPError
+- Nei Monggol TV 2 Mongolian Culture Channel (http://1.24.190.98:10080/hls/40/index.m3u8) ms=99999 err=URLError
+- like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Undefined",Nei Monggol TV (960p) (https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8) ms=99999 err=HTTPError
+- Ningxia Satellite Channel (576p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225726/index.m3u8) ms=99999 err=URLError
+- Pingxiang TV News Channel (576p) [Not 24/7] (http://www.pxitv.com:8099/hls-live/livepkgr/_definst_/pxitvevent/pxtv1stream.m3u) ms=99999 err=URLError
+- Qinghai TV (576p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225727/index.m3u8) ms=99999 err=URLError
+- QTV-3 (http://video10.qtv.com.cn/drm/qtv3at/manifest.m3u8) ms=99999 err=TimeoutError
+- Shandong Satellite TV (720p) (http://125.210.152.18:9090/live/SDWSHD_H265.m3u8) ms=99999 err=URLError
+- Shandong TV (1080p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225697/index.m3u8) ms=99999 err=URLError
+- Shandong TV Agricultural Science Channel (406p) [Geo-blocked] (http://livealone302.iqilu.com/iqilu/nkpd.m3u8) ms=99999 err=HTTPError
+- Shandong TV Children's Channel (406p) [Geo-blocked] (http://livealone302.iqilu.com/iqilu/sepd.m3u8) ms=99999 err=HTTPError
+- Shandong TV Life Channel (1080p) [Geo-blocked] (http://livealone302.iqilu.com/iqilu/shpd.m3u8) ms=99999 err=HTTPError
+- Shandong TV Qilu Channel (1080p) [Geo-blocked] (http://livealone302.iqilu.com/iqilu/qlpd.m3u8) ms=99999 err=HTTPError
+- Shandong TV Sports Channel (1080p) [Geo-blocked] (http://livealone302.iqilu.com/iqilu/typd.m3u8) ms=99999 err=HTTPError
+- Shandong TV Variety Channel (406p) [Geo-blocked] (http://livealone302.iqilu.com/iqilu/zypd.m3u8) ms=99999 err=HTTPError
+- Shenzhen Satellite TV (2160p) (https://livepull-tcms.sztv.com.cn/live/sz4Kpgm.m3u8) ms=99999 err=HTTPError
+- Sichuan Satellite TV (576p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225733/index.m3u8) ms=99999 err=URLError
+- Sichuan TV Women and Children Channel (720p) [Not 24/7] (http://scgctvshow.sctv.com/hdlive/sctv7/index.m3u8) ms=99999 err=URLError
+- Tianjin TV (1080p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225698/index.m3u8) ms=99999 err=URLError
+- Tonghua TV (1080p) (http://lsfb.avap.jilintv.cn/zqvk7vpj/channel/43ea5771aa44421591f9dfd2b71f1b9b/in) ms=99999 err=HTTPError
+- Xi'an Business Information Channel (180p) [Not 24/7] (http://stream2.xiancity.cn/xatv3/playlist.m3u8) ms=99999 err=URLError
+- Xi'an Silk Road Channel (404p) [Not 24/7] (http://stream2.xiancity.cn/xatv5/playlist.m3u8) ms=99999 err=URLError
+- Xinjiang TV 1 (https://klmysjtzb.rcsxzx.com/hls/klmy2.m3u8) ms=99999 err=URLError
+- Xuzhou Economic Life Channel (1080p) (http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221225947/index.m3u8) ms=99999 err=URLError
+- Yanbian Satellite TV (576p) (http://223.110.245.139/PLTV/4/224/3221227008/index.m3u8) ms=99999 err=URLError
+- You Man Cartoon Channel (576p) (http://183.207.249.15/PLTV/4/224/3221225933/index.m3u8) ms=99999 err=URLError
+- Yunnan Satellite TV (1080p) (https://hwapi.yunshicloud.com/8xughf/e0bx15.m3u8) ms=99999 err=TimeoutError
+- Zhejiang Satellite TV (1080p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225703/index.m3u8) ms=99999 err=URLError
+- CCTV-1 综合 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-1-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- CCTV-2 财经 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-2-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- CCTV-3 综艺 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-3-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- CCTV-4 中文国际 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-4-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- CCTV-5 体育 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-5-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- CCTV-5+ 体育赛事 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-5PLUS-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsa) ms=99999 err=HTTPError
+- CCTV-6 电影 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-6-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- CCTV-7 国防军事 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-7-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- CCTV-8 电视剧 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-8-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- CCTV-9 纪录 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-9-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- CCTV-10 科教 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-10-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- CCTV-11 戏曲 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-11-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- CCTV-12 社会与法 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-12-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- CCTV-13 新闻 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-13-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- CCTV-14 少儿 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-14-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- CCTV-15 音乐 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-15-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- CCTV-16 奥林匹克 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-16-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- CCTV-17 农业农村 (http://58.248.112.205:8006/GD_CUCC/G_CCTV-17-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- 北京卫视 (http://58.248.112.205:8006/GD_CUCC/G_BEIJING-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- 东方卫视 (http://58.248.112.205:8006/GD_CUCC/G_DONGFANG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPm) ms=99999 err=HTTPError
+- 湖南卫视 (http://58.248.112.205:8006/GD_CUCC/G_HUNAN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2) ms=99999 err=HTTPError
+- 江苏卫视 (http://58.248.112.205:8006/GD_CUCC/G_JIANGSU-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- 浙江卫视 (http://58.248.112.205:8006/GD_CUCC/G_ZHEJIANG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPm) ms=99999 err=HTTPError
+- 黑龙江卫视 (http://58.248.112.205:8006/GD_CUCC/G_HEILONGJIANG-CQ.m3u8?Authinfo=3iRp8RZG1d3hG) ms=99999 err=HTTPError
+- 吉林卫视 (http://58.248.112.205:8006/GD_CUCC/G_JILIN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2) ms=99999 err=HTTPError
+- 辽宁卫视 (http://58.248.112.205:8006/GD_CUCC/G_LIAONING-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPm) ms=99999 err=HTTPError
+- 河北卫视 (http://58.248.112.205:8006/GD_CUCC/G_HEBEI-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2) ms=99999 err=HTTPError
+- 天津卫视 (http://58.248.112.205:8006/GD_CUCC/G_TIANJIN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- 山东卫视 (http://58.248.112.205:8006/GD_CUCC/G_SHANDONG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPm) ms=99999 err=HTTPError
+- 安徽卫视 (http://58.248.112.205:8006/GD_CUCC/G_ANHUI-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2) ms=99999 err=HTTPError
+- 河南卫视 (http://58.248.112.205:8006/GD_CUCC/G_HENAN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2) ms=99999 err=HTTPError
+- 湖北卫视 (http://58.248.112.205:8006/GD_CUCC/G_HUBEI-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2) ms=99999 err=HTTPError
+- 江西卫视 (http://58.248.112.205:8006/GD_CUCC/G_JIANGXI-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- 东南卫视 (http://58.248.112.205:8006/GD_CUCC/G_DONGNAN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- 广东卫视 (http://58.248.112.205:8006/GD_CUCC/G_GUANGDONG-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaP) ms=99999 err=HTTPError
+- 深圳卫视 (http://58.248.112.205:8006/GD_CUCC/G_SHENZHEN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPm) ms=99999 err=HTTPError
+- 广西卫视 (http://58.248.112.205:8006/GD_CUCC/G_GUANGXI-HQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- 海南卫视 (http://58.248.112.205:8006/GD_CUCC/G_HAINAN-HQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- 四川卫视 (http://58.248.112.205:8006/GD_CUCC/G_SICHUAN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- 重庆卫视 (http://58.248.112.205:8006/GD_CUCC/G_CHONGQING-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaP) ms=99999 err=HTTPError
+- 贵州卫视 (http://58.248.112.205:8006/GD_CUCC/G_GUIZHOU-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj) ms=99999 err=HTTPError
+- 云南卫视 (http://58.248.112.205:8006/GD_CUCC/G_YUNNAN-CQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- 陕西卫视 (http://58.248.112.205:8006/GD_CUCC/G_SHANXI-HQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- 甘肃卫视 (http://58.248.112.205:8006/GD_CUCC/G_GANSU-HQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%2) ms=99999 err=HTTPError
+- 三沙卫视 (http://58.248.112.205:8006/GD_CUCC/G_SANSHA-HQ.m3u8?Authinfo=3iRp8RZG1d3hGsaPmj%) ms=99999 err=HTTPError
+- 内蒙古卫视 (https://livestream-bt.nmtv.cn/nmtv/2314general.m3u8?txSecret=dc348a27bd36fe1bd63) ms=99999 err=HTTPError
+- 青海卫视 (http://stream.qhbtv.com/qhws/sd/live.m3u8?_upt=f35a89681647856030) ms=99999 err=URLError
+- 延边卫视 (http://live.ybtvyun.com/video/s10006-44f040627ca1/index.m3u8) ms=99999 err=URLError
+- CCTV-1 综合 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV1HD/index.m3u8?gMac=unknown&livodToken=bb800) ms=99999 err=URLError
+- CCTV-2 财经 (http://liveop.cctv.cn/hls/CCTV28bee868714f04ea2af79947bb9b46fc3H/playlist.m3u8) ms=99999 err=URLError
+- CCTV-3 综艺 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV3_HD/index.m3u8?gMac=unknown&livodToken=5c5d) ms=99999 err=URLError
+- CCTV-4 中文国际 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV4HD/index.m3u8?gMac=unknown&livodToken=a2076) ms=99999 err=URLError
+- CCTV-5 体育 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV5_HD/index.m3u8?gMac=unknown&livodToken=0a8d) ms=99999 err=URLError
+- CCTV-6 电影 (http://mobilelive-ds.ysp.cctv.cn/ysp/2013693901.m3u8) ms=99999 err=HTTPError
+- CCTV-8 电视剧 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV8_HD/index.m3u8?gMac=unknown&livodToken=a262) ms=99999 err=URLError
+- CCTV-9 纪录 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV9HD/index.m3u8?gMac=unknown&livodToken=82779) ms=99999 err=URLError
+- CCTV-10 科教 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV10HD/index.m3u8?gMac=unknown&livodToken=3372) ms=99999 err=URLError
+- CCTV-11 戏曲 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV11HD/index.m3u8?gMac=unknown&livodToken=b7b4) ms=99999 err=URLError
+- CCTV-12 社会与法 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV12HD/index.m3u8?gMac=unknown&livodToken=580c) ms=99999 err=URLError
+- CCTV-13 新闻 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV13HD/index.m3u8?gMac=unknown&livodToken=f4be) ms=99999 err=URLError
+- CCTV-14 少儿 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV14HD/index.m3u8?gMac=unknown&livodToken=c1f7) ms=99999 err=URLError
+- CCTV-15 音乐 (http://jxcbn.ws-cdn.gitv.tv/hls/CCTV15/index.m3u8?gMac=unknown&livodToken=bde6e8) ms=99999 err=URLError
+- CCTV-4K 超高清 (http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8) ms=99999 err=URLError
+- 北京卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/BEIJHD/index.m3u8?gMac=unknown&livodToken=43dbb4) ms=99999 err=URLError
+- 东方卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/DONGFHD/index.m3u8?gMac=unknown&livodToken=4cb77) ms=99999 err=URLError
+- 天津卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/TIANJHD/index.m3u8?gMac=unknown&livodToken=4d4c8) ms=99999 err=URLError
+- 黑龙江卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/HEILJHD/index.m3u8?gMac=unknown&livodToken=64cde) ms=99999 err=URLError
+- 吉林卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/JILHD/index.m3u8?gMac=unknown&livodToken=aef69bf) ms=99999 err=URLError
+- 辽宁卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/LIAONHD/index.m3u8?gMac=unknown&livodToken=33bd6) ms=99999 err=URLError
+- 内蒙古卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/NMGWS/index.m3u8?gMac=unknown&livodToken=a09588c) ms=99999 err=URLError
+- 宁夏卫视 (https://hls.ningxiahuangheyun.com/live/nxws1M.m3u8) ms=99999 err=HTTPError
+- 甘肃卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/GSWS/index.m3u8?gMac=unknown&livodToken=171a8342) ms=99999 err=URLError
+- 青海卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/QHWS/index.m3u8?gMac=unknown&livodToken=495e44fa) ms=99999 err=URLError
+- 陕西卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/SXTV/index.m3u8?gMac=unknown&livodToken=c553bb82) ms=99999 err=URLError
+- 河北卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/HAIBHD/index.m3u8?gMac=unknown&livodToken=e80bcd) ms=99999 err=URLError
+- 山东卫视 (http://lives.jnnews.tv/video/s10001-SDTV/index.m3u8) ms=99999 err=URLError
+- 安徽卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/ANHUIHD/index.m3u8?gMac=unknown&livodToken=02a80) ms=99999 err=URLError
+- 河南卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/HENHD/index.m3u8?gMac=unknown&livodToken=c7713f9) ms=99999 err=URLError
+- 湖北卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/HUBEIHD/index.m3u8?gMac=unknown&livodToken=b8f87) ms=99999 err=URLError
+- 湖南卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/HUNANHD/index.m3u8?gMac=unknown&livodToken=d70b5) ms=99999 err=URLError
+- 江西卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/JXWSHD/index.m3u8?gMac=unknown&livodToken=84e380) ms=99999 err=URLError
+- 江苏卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/JIANGSHD/index.m3u8?gMac=unknown&livodToken=aca1) ms=99999 err=URLError
+- 东南卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/DONGNHD/index.m3u8?gMac=unknown&livodToken=5fc20) ms=99999 err=URLError
+- 广东卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/GUANGDHD/index.m3u8?gMac=unknown&livodToken=59fd) ms=99999 err=URLError
+- 深圳卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/SHENZHD/index.m3u8?gMac=unknown&livodToken=6b52c) ms=99999 err=URLError
+- 广西卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/GUANGXHD/index.m3u8?gMac=unknown&livodToken=a71e) ms=99999 err=URLError
+- 云南卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/YUNNHD/index.m3u8?gMac=unknown&livodToken=bd7418) ms=99999 err=URLError
+- 贵州卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/GUIZHD/index.m3u8?gMac=unknown&livodToken=c2389e) ms=99999 err=URLError
+- 四川卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/SICHD/index.m3u8?gMac=unknown&livodToken=539d732) ms=99999 err=URLError
+- 新疆卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/XJWS/index.m3u8?gMac=unknown&livodToken=3b0868c3) ms=99999 err=URLError
+- 兵团卫视 (https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8) ms=99999 err=HTTPError
+- 海南卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/HAINHD/index.m3u8?gMac=unknown&livodToken=337c9e) ms=99999 err=URLError
+- CCTV-1综合 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-2财经 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-3综艺 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-4中文国际 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-5体育 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-5+体育赛事 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-6电影 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-7国防军事 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-8电视剧 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-9纪录 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-10科教 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-11戏曲 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-12社会与法 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-13新闻 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-14少儿 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-15音乐 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-16奥林匹克 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- CCTV-17农业农村 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 北京卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 东方卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 浙江卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 江苏卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 广东卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 湖南卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 深圳卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 四川卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 天津卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 辽宁卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 黑龙江卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 吉林卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
