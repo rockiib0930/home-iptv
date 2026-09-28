@@ -234,8 +234,15 @@ def main():
 
         alive = [c for c in results if c["ok"] and c["ms"] <= HEALTHY_MAX_MS]
         dead = [c for c in results if not (c["ok"] and c["ms"] <= HEALTHY_MAX_MS)]
-        # 按延迟升序，越快越靠前
-        alive.sort(key=lambda x: x["ms"])
+
+    # 排序：中央台(CCTV/中央)最前，按频道号数字升序；其余地方台按延迟排
+    def sort_key(c):
+        n = c["name"]
+        m = re.match(r'(?:CCTV|中央电视台|中央)[ -]?(\d+)', n, re.IGNORECASE)
+        if m:
+            return (0, int(m.group(1)), c.get("ms", 9999))
+        return (1, 0, c.get("ms", 9999))
+    alive.sort(key=sort_key)
     print(f"alive: {len(alive)}, dead: {len(dead)}")
 
     # index.m3u = 探活后存活的国内频道（按延迟排序）
