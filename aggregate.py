@@ -30,12 +30,8 @@ import urllib.request
 from pathlib import Path
 
 # ---------- 上游源（全部为开源社区维护、CC0/公开 FTA 协议） ----------
+# 国内可用源优先：iptv-org CN 频道 + fanmingming 国内直播源
 UPSTREAMS = [
-    {
-        "name": "iptv-org-global",
-        "url": "https://iptv-org.github.io/iptv/index.m3u",
-        "scope": "global",
-    },
     {
         "name": "iptv-org-cn",
         "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
@@ -43,12 +39,12 @@ UPSTREAMS = [
     },
     {
         "name": "fanmingming-index",
-        "url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+        "url": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/tv/m3u/index.m3u",
         "scope": "cn",
     },
     {
         "name": "fanmingming-ipv6",
-        "url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+        "url": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/tv/m3u/ipv6.m3u",
         "scope": "cn",
     },
 ]
@@ -242,13 +238,12 @@ def main():
         alive.sort(key=lambda x: x["ms"])
     print(f"alive: {len(alive)}, dead: {len(dead)}")
 
-    # 全量（含所有去重后频道，不管死活，让播放器自己兜底）
-    write_m3u(OUT_DIR / "index.m3u", all_channels)
-    # 仅存活且快速
+    # index.m3u = 探活后存活的国内频道（按延迟排序）
+    write_m3u(OUT_DIR / "index.m3u", alive)
+    # hd.m3u 同 index（保留兼容）
     write_m3u(OUT_DIR / "hd.m3u", alive)
-    # 中文频道
-    cn = [c for c in alive if c["scope"] == "cn"]
-    write_m3u(OUT_DIR / "cn.m3u", cn)
+    # cn.m3u 同 index
+    write_m3u(OUT_DIR / "cn.m3u", alive)
 
     # 调试日志
     (OUT_DIR / "UNSUPPORTED.md").write_text(
