@@ -2,14 +2,13 @@
 
 - like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="General",1+1 International (http://158.101.222.193:88/georgia_play.php?id=1plus1international) ms=99999 err=URLError
 - 2M Monde (360p) (https://cdn-globecast.akamaized.net/live/eds/2m_monde/hls_video_ts_tuhawxpiemz25) ms=99999 err=HTTPError
+- 2x2 (576i) (https://bl.rutube.ru/livestream/392b4686b770bae2da6bf5ac4574add5/index.m3u8?e=20) ms=4550 err=
 - 3ABN TV Uganda (720p) [Not 24/7] (https://3abn.bozztv.com/3abn/3abn_uganda_live/index.m3u8) ms=99999 err=HTTPError
 - 3Cat Exclusiu 1 (1080p) [Geo-blocked] (https://directes-tv-cat.3catdirectes.cat/live-content/oca1-hls/master.m3u8) ms=99999 err=HTTPError
 - 3Cat Exclusiu 2 (1080p) [Geo-blocked] (https://directes-tv-cat.3catdirectes.cat/live-content/oca2-hls/master.m3u8) ms=99999 err=HTTPError
 - 3Cat Exclusiu 3 (1080p) [Geo-blocked] (https://directes-tv-cat.3catdirectes.cat/live-content/oca3-hls/master.m3u8) ms=99999 err=HTTPError
-- 3HD (https://live-us1.thaimomo.com/live-as/ch3hd-3/playlist.m3u8) ms=99999 err=TimeoutError
 - 3 Stones TV (240p) [Not 24/7] (https://goliveafrica.media:9998/live/64d21e682fd26/index.m3u8) ms=99999 err=HTTPError
-- 4Dmas Noticias TV (1080p) [Not 24/7] (https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8) ms=99999 err=TimeoutError
-- 4E (1080p) (http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8) ms=3557 err=
+- 4E (1080p) (http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8) ms=4280 err=
 - 5Gold (1080p) (http://str2.iptvhd.ru:8080/sport5gold/index.m3u8) ms=99999 err=HTTPError
 - 5Live (1080p) (http://str2.iptvhd.ru:8080/5live/index.m3u8) ms=99999 err=HTTPError
 - 5Plus (1080p) (http://89.33.29.115:8080/sportplus/index.m3u8) ms=99999 err=HTTPError
@@ -34,7 +33,6 @@
 - 24 Horas Canarias (1080p) (http://185.47.212.25:8080/24h_HD/index.m3u8) ms=99999 err=HTTPError
 - 24 Horas Catalunya (720p) (https://ztnr.rtve.es/ztnr/4952053.m3u8) ms=99999 err=HTTPError
 - 24Kitchen Bulgary (1080p) (http://hls127.freeott.top:8080/BG_24_Kitchen/video.m3u8) ms=99999 err=TimeoutError
-- 50 Canale (https://load-balancer.azotosolutions.com/cdnedge37/canale50/playlist.m3u8) ms=3623 err=
 - 100% Auto Moto TV (406p) [Not 24/7] (http://100automoto.tv:1935/bgtv1/autotv/playlist.m3u8) ms=99999 err=URLError
 - like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="General",101tv Antequera [Geo-blocked] (https://liveingesta318.cdnmedia.tv/101weblive/smil:antequera.smil/playlist.m3u8) ms=99999 err=HTTPError
 - 101tv Cadiz (1080p) (https://streaming101tv.es:19360/cadiz/cadiz.m3u8) ms=99999 err=HTTPError
@@ -52,20 +50,19 @@
 - A2i Music (720p) [Not 24/7] (https://stream.sen-gt.com/A2iMusic/myStream/playlist.m3u8) ms=99999 err=HTTPError
 - A2i Naija (720p) [Not 24/7] (https://stream.sen-gt.com/A2iNaija/myStream/playlist.m3u8) ms=99999 err=HTTPError
 - A-Plus TV (576p) (http://115.42.65.142:9981/stream/channelid/113328724) ms=99999 err=URLError
+- Aaj Entertainment (1080p) (https://ml-pull-dvc-myco.io:2096/AAJ_ENTERTAINMENT/index.m3u8) ms=99999 err=URLError
 - Aaj News (576p) (http://115.42.65.142:9981/stream/channelid/750987367) ms=99999 err=URLError
 - Aaj Tak (1080p) (http://103.213.31.109:90/AajtakHD/playlist.m3u8) ms=99999 err=URLError
 - like Gecko) Chrome/147.0.0.0 Safari/537.36" group-title="Religious",Aastha (576p) (http://103.175.73.12:8080/live/338/master.m3u8) ms=99999 err=URLError
 - like Gecko) Chrome/147.0.0.0 Safari/537.36" group-title="Religious",Aastha Bhajan (576p) (http://103.175.73.12:8080/live/339/master.m3u8) ms=99999 err=URLError
 - Aathavan TV (720p) [Not 24/7] (http://45.77.66.224:1935/athavantv/live/playlist.m3u8) ms=99999 err=URLError
 - AB1 (720p) (http://145.239.5.177/332/index.m3u8) ms=99999 err=HTTPError
-- Abai TV (720p) (https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8) ms=4828 err=
 - Abb Takk (576p) (http://115.42.65.142:9981/stream/channelid/852828604) ms=99999 err=URLError
 - ABC WJLA-TV (1080p) (https://linear-681.frequency.stream/dist/stirr/681/hls/master/playlist.m3u8) ms=99999 err=HTTPError
 - ABC WLOS (1080p) (https://linear-695.frequency.stream/dist/stirr/695/hls/master/playlist.m3u8) ms=99999 err=HTTPError
 - ABC WPDE-TV (1080p) (https://linear-696.frequency.stream/dist/stirr/696/hls/master/playlist.m3u8) ms=99999 err=HTTPError
 - ABC WSYX (1080p) (https://linear-689.frequency.stream/dist/stirr/689/hls/master/playlist.m3u8) ms=99999 err=HTTPError
 - ABC Teleshow (720p) (https://live-evg10.tv360.bitel.com.pe/bitel/abctv/playlist.m3u8) ms=99999 err=HTTPError
-- ABN (720p) (https://vod2.abn.co.kr/IPHONE/abn.m3u8) ms=3834 err=
 - ABN News (1080p) (http://115.42.65.142:9981/stream/channelid/966869781) ms=99999 err=URLError
 - Abya Yala TV (720p) (http://15.204.246.24:8080/AbyaYalaTvHD/index.m3u8) ms=99999 err=HTTPError
 - AC TV (480p) [Not 24/7] (https://ssh101stream.ssh101.com/akamaissh101/ssh101/actvstream/playlist.m3u8) ms=99999 err=URLError
@@ -89,14 +86,12 @@
 - Africa TV3 (720p) [Not 24/7] (http://africatv.live.net.sa:1935/live/africatv3/playlist.m3u8) ms=99999 err=HTTPError
 - Afrique54 TV (720p) (https://video1.getstreamhosting.com:1936/8318/8318/playlist.m3u8) ms=99999 err=HTTPError
 - Afrique Media (720p) (https://cloud.odysee.live/content/fe06b3cdc9412e359368b2455b6ea5e93856e382/maste) ms=99999 err=HTTPError
-- AFTV (1080p) (https://livestream.telvue.com/accframingham1/f7b44cfafd5c52223d5498196c8a2e7b.sd) ms=99999 err=HTTPError
 - AFV Espanol (720p) [Not 24/7] (https://linear-46.frequency.stream/dist/plex/46/hls/master/playlist.m3u8) ms=99999 err=URLError
 - Agro TV (Peru) (720p) (https://live-evg8.tv360.bitel.com.pe/bitel/agroSRT/playlist.m3u8) ms=99999 err=HTTPError
 - AgroBrasil TV (720p) [Not 24/7] (http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8) ms=99999 err=URLError
 - AION TV (1080p) [Not 24/7] (https://edge.essastream.com/aiontelevision/playlist.m3u8) ms=99999 err=TimeoutError
 - Ajwa TV (1080p) (http://ikitv.sqn.at:8000/play/a00j/index.m3u8) ms=99999 err=HTTPError
-- AKTV (1080p) [Not 24/7] (https://akativi.siar.us/live/akativi.m3u8) ms=99999 err=URLError
-- Al Iraqia News (720p) (https://imn-live.esite-lab.com/hls/iraqia-news.m3u8) ms=99999 err=HTTPError
+- AKTV (1080p) [Not 24/7] (https://akativi.siar.us/live/akativi.m3u8) ms=99999 err=HTTPError
 - Al Jazeera Documentary (1080p) [Geo-blocked] (https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8) ms=99999 err=HTTPError
 - Al Quran Al Kareem TV (720p) (http://m.live.net.sa:1935/live/quran/gmswf.m3u8) ms=99999 err=HTTPError
 - Al Rasheed TV (1080p) [Not 24/7] (https://media1.livaat.com/static/AL-RASHEED-HD/playlist.m3u8) ms=99999 err=HTTPError
@@ -116,6 +111,8 @@
 - Alfa Sport (1080p) [Not 24/7] (https://dev.aftermind.xyz/edge-hls/unitrust/alfasports/index.m3u8?token=8TXWzhY3) ms=99999 err=HTTPError
 - Alhurra (720p) (https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038900/MBN_Alhurra_Worldsaf) ms=99999 err=URLError
 - Alhurra Iraq (720p) (https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038899/MBN_Iraq_Worldsafe_H) ms=99999 err=URLError
+- Alikhbaria Syria (1080p) (http://185.9.2.18/chid_423/index.m3u8) ms=99999 err=HTTPError
+- All Time Movies (576p) (https://tvsen6.aynaott.com/a2cKGQtB/index.m3u8) ms=99999 err=HTTPError
 - Alma TV (576p) (http://151.0.207.99:1935/AlmaTv/AlmaTv/playlist.m3u8) ms=99999 err=URLError
 - Alpha Channel (720p) (https://5b01a3d32b65c.streamlock.net:1936/tvalpha/tvalpha/playlist.m3u8) ms=99999 err=URLError
 - alpha Cinema (1080p) (https://live.15plusmg.ru/memfs/b389173a-df4e-4171-8904-e249893e71eb.m3u8) ms=99999 err=URLError
@@ -127,6 +124,7 @@
 - Altura TV (720p) (https://live-evg10.tv360.bitel.com.pe/bitel/urbanatv/playlist.m3u8) ms=99999 err=HTTPError
 - ALTV (1080p) (https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_1080p/index.m3u8) ms=99999 err=HTTPError
 - Amarin TV (https://lb1-live-mv.v2h-cdn.com/hls/ffad/vibomi/vibomi.m3u8) ms=99999 err=HTTPError
+- Amazonia TV (https://servilive.com:3199/live/amazoniatvlive.m3u8) ms=99999 err=HTTPError
 - AMC en Espanol (https://amc-amcespanol-1-us.lg.wurl.tv/playlist.m3u8) ms=99999 err=URLError
 - AMC Europe Bulgary (576p) (http://hls127.freeott.top:8080/BG_AMC/video.m3u8) ms=99999 err=TimeoutError
 - like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18" group-title="Movies",AMC Europe Romania (https://iron1.jarvisx1.cfd/amece/usergenrx3oq1kr.m3u8) ms=99999 err=HTTPError
@@ -153,6 +151,7 @@
 - Antenne Vorarlberg (720p) [Not 24/7] (https://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livest) ms=99999 err=URLError
 - like Gecko) Chrome/65.0.3325.181 Safari/537.36" group-title="General",ANTV (Indonesia) (720p) (http://103.58.160.157:8278/720-ANTV/playlist.m3u8) ms=99999 err=TimeoutError
 - Anwar TV2 (720p) (https://cloud.odysee.live/content/f92670235a1ce2bce4cf77671cc4dcc2188baa1d/maste) ms=99999 err=HTTPError
+- Anzoategui TV (360p) [Not 24/7] (https://vcp2.myplaytv.com/anzoateguitv/anzoateguitv/playlist.m3u8) ms=99999 err=HTTPError
 - Apna Channel (576p) (http://115.42.65.142:9981/stream/channelid/1273966657) ms=99999 err=URLError
 - Apostrophe TV (1080p) (https://ext.cdn.nashnet.tv/228.0.2.165/index.m3u8) ms=99999 err=HTTPError
 - Aqjaiyq (576p) (https://stream.kaztrk.kz/regional/oraltv/index.m3u8) ms=99999 err=HTTPError
@@ -164,13 +163,13 @@
 - like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Arena Sport Premium M1 (https://racitonsen.s.gy/AM1P) ms=99999 err=HTTPError
 - like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Arena Sport Premium M2 (https://racitonsen.s.gy/AM2P) ms=99999 err=HTTPError
 - like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Arena Sport Premium M3 (https://racitonsen.s.gy/AM3P) ms=99999 err=HTTPError
-- Argus News (576p) (https://mumt05.tangotv.in/87NeALx2ARGUSNEWS/index.m3u8) ms=99999 err=HTTPError
 - Aristo TV (360p) (https://ma.anixa.tv/clips/stream/aristo/index.m3u8) ms=99999 err=HTTPError
 - Arktika 24 (1080p) (https://vgtrkregion-reg.cdnvideo.ru/vgtrk/arhangelsk/arktika24-hd/index.m3u8) ms=99999 err=URLError
 - Arlaadi TV (https://ap02.iqplay.tv:8082/iqb8002/alr114iapp/playlist.m3u8) ms=99999 err=URLError
 - Armenia 1 (1080p) (https://ifl01eu-new.bozztv.com/am1abr/index.m3u8) ms=99999 err=HTTPError
 - Arpegio TV (720p) (https://live-evg8.tv360.bitel.com.pe/bitel/arpegioSRT/playlist.m3u8) ms=99999 err=HTTPError
 - ART (Greece) (1080p) (https://rumble.com/live-hls-dvr/78ixwi/playlist.m3u8) ms=99999 err=HTTPError
+- ART (Russia) (576p) (http://89.104.114.24:8080/art/index.m3u8) ms=99999 err=URLError
 - ART TV (https://rtmp.win:3696/live/arttvgrlive.m3u8) ms=99999 err=HTTPError
 - arte (France) (720p) (http://145.239.5.177/300/index.m3u8) ms=99999 err=HTTPError
 - arte (Germany) (720p) [Geo-blocked] (https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8) ms=99999 err=HTTPError
@@ -183,15 +182,14 @@
 - Asi Sucede Guanajuato (720p) [Not 24/7] (https://stream.oursnetworktv.com/latin/encoder13/playlist.m3u8) ms=99999 err=HTTPError
 - Asia TV (720p) (https://stream.asiatvnet.com/1/live/master.m3u8) ms=99999 err=HTTPError
 - AsiriTV (720p) [Not 24/7] (https://video2.lhdserver.es/asiritv/live.m3u8) ms=99999 err=HTTPError
-- Asom Live 24 (576p) (https://mumt06.tangotv.in/qYyB8fXVASHOMLIVE/index.m3u8) ms=99999 err=HTTPError
 - Astha TV (1080p) [Not 24/7] (https://hgmtv.com:19360/asthatv/asthatv.m3u8) ms=99999 err=HTTPError
 - Astra TV (1080p) (https://server.gointernet.gr/live/livestream.m3u8) ms=99999 err=HTTPError
 - Atabal TV (1080p) [Not 24/7] (https://vdopanel.jlahozconsulting.com:3648/live/atabaltvlive.m3u8) ms=99999 err=HTTPError
-- Atacama TV (https://v2.tustreaming.cl/atacamatv/tracks-v1a1/mono.ts.m3u8) ms=99999 err=HTTPError
 - Atambua TV (720p) (http://122.248.43.242:1935/ATAMBUATV/_definst_/myStream/playlist.m3u8) ms=99999 err=HTTPError
 - Atlantis Radio TV (720p) (https://live-evg8.tv360.bitel.com.pe/bitel/atlantisSRT/playlist.m3u8) ms=99999 err=HTTPError
 - ATR (1080p) (http://stream.mcquack.net/244/index.m3u8) ms=99999 err=HTTPError
 - ATV (Austria) HD (1080p) (http://212.186.45.34:9981/stream/channelid/692531719?profile=pass) ms=99999 err=URLError
+- ATV (Belgium) (1080p) (https://live.zendzend.com/mpegts/29375_107244/media_mpegts_0.m3u8) ms=99999 err=HTTPError
 - ATV (Guinea) (400p) [Not 24/7] (https://guineetvdirect.online:3320/live/atvguineelive.m3u8) ms=99999 err=HTTPError
 - ATV (Hungary) (160p) (https://streamservers.atv.hu/atvlive/atvstream_1_aac/playlist.m3u8) ms=99999 err=URLError
 - ATV (Kosovo) (1080p) (http://5.254.89.106/8709/index.m3u8) ms=99999 err=HTTPError
@@ -200,3 +198,5 @@
 - ATV Spirit (360p) (https://streamservers.atv.hu/atvliveedge/_definst_/atvstream_2_aac/playlist.m3u8) ms=99999 err=URLError
 - Atyray (720p) (https://stream.kaztrk.kz/regional/atyrautv/index.m3u8) ms=99999 err=HTTPError
 - Audaz TV (432p) [Not 24/7] (https://cloud2.streaminglivehd.com:1936/8264/8264/playlist.m3u8) ms=99999 err=HTTPError
+- Auge TV (720p) (https://cdn-tiva-video01-logicahost-com-br.smartbit.co/canalaugetv/canalaugetv/p) ms=99999 err=URLError
+- AuroraTV (720p) (https://reflect-aurora.cablecast.tv/live-8/live/live.m3u8) ms=99999 err=HTTPError
