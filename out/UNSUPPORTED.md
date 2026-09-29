@@ -27,9 +27,9 @@
 - Heilongjiang TV (1080p) (http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227492/index.m3u8) ms=99999 err=URLError
 - Hezheng TV (http://117.156.28.119/270000001111/1110000149/index.m3u8) ms=99999 err=URLError
 - High Channel TV (1080p) (http://117.156.28.119/270000001111/1110000146/index.m3u8) ms=99999 err=URLError
-- Hunan News Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_346.m3u8) ms=99999 err=URLError
-- Hunan Politics & Law Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_348.m3u8) ms=99999 err=URLError
-- Hunan Womens Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_349.m3u8) ms=99999 err=URLError
+- Hunan News Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_346.m3u8) ms=99999 err=HTTPError
+- Hunan Politics & Law Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_348.m3u8) ms=99999 err=HTTPError
+- Hunan Womens Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_349.m3u8) ms=99999 err=HTTPError
 - Jiangsu City Channel (576p) (http://183.207.248.71/gitv/live1/G_JSCS/G_JSCS) ms=99999 err=URLError
 - Jiangsu Educational Channel (576p) (http://223.110.245.151/ott.js.chinamobile.com/PLTV/3/224/3221225923/index.m3u8) ms=99999 err=URLError
 - Jiangsu Movie Channel (576p) (http://223.110.243.134/PLTV/4/224/3221225937/index.m3u8) ms=99999 err=URLError
@@ -44,7 +44,7 @@
 - Jiangxi Public & Agriculture Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv5.m3u8) ms=99999 err=HTTPError
 - Jiangxi TV (1080p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225705/index.m3u8) ms=99999 err=URLError
 - Jilin City Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/7e8474e6daea44ccaa5aa2300191439e/i) ms=99999 err=HTTPError
-- Jilin Lifestyle Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/0a76740c72b74fabae611845aa21e06a/i) ms=99999 err=TimeoutError
+- Jilin Lifestyle Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/0a76740c72b74fabae611845aa21e06a/i) ms=99999 err=HTTPError
 - Jilin Movie Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/906341e6f19b4c4bacdc89941eb85d12/i) ms=99999 err=HTTPError
 - Jilin Rural Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/3ffc4824dce54b92be185555923ce382/i) ms=99999 err=HTTPError
 - Jiuquan TV News Comprehensive Channel (576p) (http://117.156.28.119/270000001111/1110000001/index.m3u8) ms=99999 err=URLError
@@ -52,11 +52,9 @@
 - Liaoning TV (1080p) (http://39.134.39.37/PLTV/88888888/224/3221226209/index.m3u8) ms=99999 err=URLError
 - Nanchang News & Generalist Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_nanchang.m3u8) ms=99999 err=HTTPError
 - Nei Monggol TV 2 Mongolian Culture Channel (http://1.24.190.98:10080/hls/40/index.m3u8) ms=99999 err=URLError
-- like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Undefined",Nei Monggol TV (960p) (https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8) ms=99999 err=HTTPError
 - Ningxia Satellite Channel (576p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225726/index.m3u8) ms=99999 err=URLError
 - Pingxiang TV News Channel (576p) [Not 24/7] (http://www.pxitv.com:8099/hls-live/livepkgr/_definst_/pxitvevent/pxtv1stream.m3u) ms=99999 err=URLError
 - Qinghai TV (576p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225727/index.m3u8) ms=99999 err=URLError
-- QTV-3 (http://video10.qtv.com.cn/drm/qtv3at/manifest.m3u8) ms=99999 err=TimeoutError
 - Shandong Satellite TV (720p) (http://125.210.152.18:9090/live/SDWSHD_H265.m3u8) ms=99999 err=URLError
 - Shandong TV (1080p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225697/index.m3u8) ms=99999 err=URLError
 - Shandong TV Agricultural Science Channel (406p) [Geo-blocked] (http://livealone302.iqilu.com/iqilu/nkpd.m3u8) ms=99999 err=HTTPError
@@ -200,3 +198,5 @@
 - 辽宁卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
 - 黑龙江卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
 - 吉林卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 海南卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 广西卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
