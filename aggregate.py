@@ -27,6 +27,11 @@ from pathlib import Path
 # ---------- 上游源（开源社区维护的公开 FTA 源） ----------
 UPSTREAMS = [
     {
+        "name": "iptv-org-global",
+        "url": "https://iptv-org.github.io/iptv/index.m3u",
+        "scope": "global",
+    },
+    {
         "name": "iptv-org-cn",
         "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
         "scope": "cn",
@@ -234,6 +239,13 @@ def main():
         except Exception as e:
             fetch_log.append(f"[FAIL] {up['name']}: {type(e).__name__} {e}")
     print("\n".join(fetch_log))
+
+    # global 源只保留中文相关频道（CJK 名 或 CCTV/CGTN），避免混入海量外语台
+    all_channels = [c for c in all_channels
+                    if c["scope"] != "global"
+                    or re.search(r"[\u4e00-\u9fff]", c["name"])
+                    or re.match(r"(CCTV|CGTN)", c["name"], re.IGNORECASE)]
+    print(f"global 过滤后: {len(all_channels)}")
 
     before = len(all_channels)
     all_channels = aggregate(all_channels)
