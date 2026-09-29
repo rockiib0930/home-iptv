@@ -1,9 +1,10 @@
 {
-  "generated_at": 1790683853,
+  "generated_at": 1790695502,
   "upstream_count": 3,
-  "total_dedup": 320,
-  "alive": 85,
-  "dead": 235,
-  "avg_ms_alive": 629.8,
-  "quick_mode": false
+  "total_aggregate": 211,
+  "multi_source": 50,
+  "total_lines": 320,
+  "alive": 211,
+  "dead": 0,
+  "quick_mode": true
 }
