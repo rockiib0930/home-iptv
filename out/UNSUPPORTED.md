@@ -1,6 +1,5 @@
 # 被标记不可用的频道（前 200 条，调试用）
 
-- Angel TV Chinese (720p) (https://janya-digimix.akamaized.net/vglive-sk-999451/chinese/ngrp:angelchinese_a) ms=99999 err=HTTPError
 - Beijing Satellite TV [Not 24/7] (http://ivi.bupt.edu.cn/hls/btv1.m3u8) ms=99999 err=URLError
 - Beijing Satellite TV HD (1080p) (http://go.bkpcp.top/mg/bjws) ms=99999 err=RemoteDisconnected
 - Bingtuan Satellite TV (540p) [Not 24/7] (http://112.25.48.68/live/program/live/btws/1300000/mnf.m3u8) ms=99999 err=URLError
@@ -29,7 +28,7 @@
 - High Channel TV (1080p) (http://117.156.28.119/270000001111/1110000146/index.m3u8) ms=99999 err=URLError
 - Hunan News Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_346.m3u8) ms=99999 err=HTTPError
 - Hunan Politics & Law Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_348.m3u8) ms=99999 err=HTTPError
-- Hunan Womens Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_349.m3u8) ms=99999 err=TimeoutError
+- Hunan Womens Channel [Geo-blocked] (http://35848.hlsplay.aodianyun.com/guangdianyun_35848/tv_channel_349.m3u8) ms=99999 err=HTTPError
 - Jiangsu City Channel (576p) (http://183.207.248.71/gitv/live1/G_JSCS/G_JSCS) ms=99999 err=URLError
 - Jiangsu Educational Channel (576p) (http://223.110.245.151/ott.js.chinamobile.com/PLTV/3/224/3221225923/index.m3u8) ms=99999 err=URLError
 - Jiangsu Movie Channel (576p) (http://223.110.243.134/PLTV/4/224/3221225937/index.m3u8) ms=99999 err=URLError
@@ -43,7 +42,7 @@
 - Jiangxi Movie Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv4.m3u8) ms=99999 err=HTTPError
 - Jiangxi Public & Agriculture Channel (https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv5.m3u8) ms=99999 err=HTTPError
 - Jiangxi TV (1080p) (http://39.134.115.163:8080/PLTV/88888910/224/3221225705/index.m3u8) ms=99999 err=URLError
-- Jilin City Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/7e8474e6daea44ccaa5aa2300191439e/i) ms=99999 err=URLError
+- Jilin City Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/7e8474e6daea44ccaa5aa2300191439e/i) ms=99999 err=HTTPError
 - Jilin Lifestyle Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/0a76740c72b74fabae611845aa21e06a/i) ms=99999 err=URLError
 - Jilin Movie Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/906341e6f19b4c4bacdc89941eb85d12/i) ms=99999 err=HTTPError
 - Jilin Rural Channel (https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/3ffc4824dce54b92be185555923ce382/i) ms=99999 err=HTTPError
@@ -166,7 +165,7 @@
 - 贵州卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/GUIZHD/index.m3u8?gMac=unknown&livodToken=c2389e) ms=99999 err=URLError
 - 四川卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/SICHD/index.m3u8?gMac=unknown&livodToken=539d732) ms=99999 err=URLError
 - 新疆卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/XJWS/index.m3u8?gMac=unknown&livodToken=3b0868c3) ms=99999 err=URLError
-- 兵团卫视 (https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8) ms=99999 err=TimeoutError
+- 兵团卫视 (https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8) ms=99999 err=HTTPError
 - 海南卫视 (http://jxcbn.ws-cdn.gitv.tv/hls/HAINHD/index.m3u8?gMac=unknown&livodToken=337c9e) ms=99999 err=URLError
 - CCTV-1综合 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
 - CCTV-2财经 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
@@ -200,3 +199,4 @@
 - 吉林卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
 - 海南卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
 - 广西卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
+- 河北卫视 (http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221) ms=99999 err=URLError
