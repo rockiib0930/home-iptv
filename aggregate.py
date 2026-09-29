@@ -65,6 +65,15 @@ RE_EXTINF = re.compile(
 RE_ATTR = re.compile(r'([a-zA-Z0-9-_]+)="([^"]*)"')
 
 
+def clean_name(name: str) -> str:
+    """上游脏数据清洗：部分 iptv-org 行会把 UA 残片混进频道名，
+    表现为 name 里出现 '",'（引号+逗号）。取最后一个 '",' 之后的真实名。"""
+    name = name.strip()
+    if '",' in name:
+        name = name.split('",')[-1].strip()
+    return name
+
+
 # ============================================================
 # 1. 拉取与解析
 # ============================================================
@@ -96,7 +105,7 @@ def parse_m3u(text: str, source: str, scope: str):
             if m:
                 attrs = dict(RE_ATTR.findall(m.group("attrs")))
                 cur = {
-                    "name": m.group("name").strip(),
+                    "name": clean_name(m.group("name")),
                     "tvg_id": attrs.get("tvg-id", ""),
                     "tvg_name": attrs.get("tvg-name", ""),
                     "logo": attrs.get("tvg-logo", ""),

@@ -139,7 +139,7 @@ http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
 https://0472.org/hls/cgtnx.m3u8
 #EXTINF:-1 tvg-id="CCTVWomensFashion.cn@SD" tvg-logo="https://i.imgur.com/FVbP0aP.png" group-title="Lifestyle",CCTV-Women's Fashion SD (1080p)
 http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="NeiMonggolTV.cn@SD" tvg-logo="https://i.imgur.com/WeugJBE.png" group-title="未分类",like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Undefined",Nei Monggol TV (960p)
+#EXTINF:-1 tvg-id="NeiMonggolTV.cn@SD" tvg-logo="https://i.imgur.com/WeugJBE.png" group-title="Undefined",Nei Monggol TV (960p)
 https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8
 #EXTINF:-1 tvg-name="CGTN阿语" tvg-logo="https://live.fanmingming.cn/tv/CGTN阿语.png" group-title="央视频道",CGTN阿语
 https://0472.org/hls/cgtna.m3u8
