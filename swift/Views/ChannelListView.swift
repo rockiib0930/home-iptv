@@ -91,11 +91,13 @@ struct ChannelListView: View {
 
     private var statusLine: String {
         if store.isLoading { return store.statusText.isEmpty ? "正在加载…" : store.statusText }
+        // 明确告诉用户这份列表是哪来的：实测筛过的，还是没筛过的全量
+        let scope = store.isVerifiedList ? "本地实测可用" : "未筛选（全量）"
         if let updated = store.lastUpdated {
             let time = updated.formatted(date: .omitted, time: .shortened)
-            return "\(store.channels.count) 个频道 · \(store.sourceCount) 条线路 · 更新于 \(time)"
+            return "\(store.channels.count) 个频道 · \(scope) · 更新于 \(time)"
         }
-        return "\(store.channels.count) 个频道 · \(store.sourceCount) 条线路"
+        return "\(store.channels.count) 个频道 · \(scope)"
     }
 
     private func groupLabel(_ group: String) -> String {

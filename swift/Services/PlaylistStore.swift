@@ -19,11 +19,14 @@ import SwiftUI
 final class PlaylistStore: ObservableObject {
 
     /// 订阅源镜像：国内实测可用且按耗时排序。最后一个失败才报错。
-    static let mirrors: [String] = [
-        "https://fastly.jsdelivr.net/gh/rockiib0930/home-iptv@main/out/index.m3u",
-        "https://rockiib0930.github.io/home-iptv/out/index.m3u",
-        "https://gcore.jsdelivr.net/gh/rockiib0930/home-iptv@main/out/index.m3u",
-        "https://cdn.jsdelivr.net/gh/rockiib0930/home-iptv@main/out/index.m3u",
+    /// 第一个是**在本机网络上实测筛过的**列表（只含连得上、且分片真的拉得到的线路），
+    /// 优先用它；它不可用时才退回全量列表，并在界面上说明"未筛选"。
+    static let mirrors: [(url: String, verified: Bool)] = [
+        ("https://fastly.jsdelivr.net/gh/rockiib0930/home-iptv@main/out/live.m3u", true),
+        ("https://rockiib0930.github.io/home-iptv/out/live.m3u", true),
+        ("https://fastly.jsdelivr.net/gh/rockiib0930/home-iptv@main/out/index.m3u", false),
+        ("https://rockiib0930.github.io/home-iptv/out/index.m3u", false),
+        ("https://gcore.jsdelivr.net/gh/rockiib0930/home-iptv@main/out/index.m3u", false),
     ]
 
     static let allKey = "全部"
@@ -46,6 +49,8 @@ final class PlaylistStore: ObservableObject {
     @Published private(set) var favorites: Set<String> = []
     /// 本次成功加载用的镜像（便于排查）
     @Published private(set) var activeMirror: String = ""
+    /// 当前列表是否经过"国内本机实测"筛选（false 时界面要说明未筛选）
+    @Published private(set) var isVerifiedList = false
 
     private let cacheFileURL: URL
     private let favoritesKeyName = "favorite_channel_keys"
@@ -108,14 +113,20 @@ final class PlaylistStore: ObservableObject {
         for (index, mirror) in Self.mirrors.enumerated() {
             statusText = "正在加载线路 \(index + 1)/\(Self.mirrors.count)…"
             do {
-                let text = try await fetch(mirror)
+                let text = try await fetch(mirror.url)
                 let parsed = M3UParser.parse(text: text)
                 guard !parsed.isEmpty else { throw URLError(.cannotParseResponse) }
-                channels = parsed
+                // 用本机播放记忆调整线路顺序：在这台设备上播成功过的排前面
+                channels = parsed.map { channel in
+                    var copy = channel
+                    copy.sources = SourceHealth.shared.sorted(channel.sources)
+                    return copy
+                }
                 rebuildGroups()
                 saveCache()
                 lastUpdated = Date()
-                activeMirror = mirror
+                activeMirror = mirror.url
+                isVerifiedList = mirror.verified
                 statusText = "已更新"
                 return
             } catch {
@@ -179,6 +190,7 @@ final class PlaylistStore: ObservableObject {
         lastUpdated = UserDefaults.standard.object(forKey: "channels_v2_time") as? Date
         activeMirror = "缓存"
         statusText = "缓存"
+        isVerifiedList = true
         return true
     }
 

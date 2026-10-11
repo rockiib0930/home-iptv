@@ -81,6 +81,9 @@ final class PlaybackController: ObservableObject {
     private var infoTask: Task<Void, Never>?
     /// 当前频道的全部线路，失败时用来回退
     private var channel: Channel?
+    /// 当前正在播的线路地址（用于把播放结果记进本机健康记忆）
+    private var currentURL: URL?
+    private var statusObservation: NSKeyValueObservation?
     /// 我们是否真的激活过音频会话。
     ///
     /// 只在激活过之后才释放：对一个从未激活的会话调用 `setActive(false)` 会向系统
@@ -122,6 +125,7 @@ final class PlaybackController: ObservableObject {
         guard let channel, channel.sources.indices.contains(index) else { return }
         sourceIndex = index
         let source = channel.sources[index]
+        currentURL = source.url
         sourceLabel = source.label(index: index)
         play(url: source.url)
         showInfo()
@@ -199,6 +203,21 @@ final class PlaybackController: ObservableObject {
 
     private func observeFailure(of item: AVPlayerItem) {
         removeObservers()
+        // 记播放结果：status 变成 readyToPlay 说明这条线在这台设备上能用；
+        // 变成 failed 则记一次失败。下次排序就会优先用成功的、后置失败的。
+        statusObservation = item.observe(\.status, options: [.new]) { [weak self] item, _ in
+            Task { @MainActor in
+                guard let self, let url = self.currentURL else { return }
+                switch item.status {
+                case .readyToPlay:
+                    SourceHealth.shared.record(url: url, succeeded: true)
+                case .failed:
+                    SourceHealth.shared.record(url: url, succeeded: false)
+                default:
+                    break
+                }
+            }
+        }
         endObserver = NotificationCenter.default.addObserver(
             forName: Self.playToEndName, object: item, queue: .main
         ) { [weak self] _ in
@@ -236,6 +255,8 @@ final class PlaybackController: ObservableObject {
     }
 
     private func removeObservers() {
+        statusObservation?.invalidate()
+        statusObservation = nil
         if let endObserver {
             NotificationCenter.default.removeObserver(endObserver)
             self.endObserver = nil
