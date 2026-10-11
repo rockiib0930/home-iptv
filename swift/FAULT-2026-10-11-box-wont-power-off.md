@@ -83,13 +83,35 @@ ChannelCard(channel: channel) {
 
 ## 机器门禁
 
+两层，缺一不可：
+
+### 1. 单元测试 `Tests/PlaybackControllerTests.swift`（10 项）
+
+```bash
+xcodebuild test -scheme HomeIPTV -destination 'platform=tvOS Simulator,name=Apple TV'
+```
+
+断言的是行为而不是文本：
+
+* 停止时必须清掉播放器、**释放音频会话**、界面状态归位；
+* 换台要先收掉上一路；
+* 流失败会弹提示并收摊；
+* 从没播过时不碰音频会话（不去打断其他 App 的声音）；
+* **产物级不变量**：`Bundle(for:)` 读到的 Info.plist 里不得有 `UIBackgroundModes` 的 audio
+  ——无论谁通过哪条构建路径把它加回来，这条都会失败。
+
+这套测试在开发过程中确实抓到过一个实现缺陷：最初的 `stop()` 会在"从没播放过"的情况下
+也去释放音频会话（`setActive(false)` 会向系统广播让出音频，可能打断别的 App），
+5 个用例同时失败把它拦了下来。
+
+### 2. 静态门禁 `swift/check-playback-safety.sh`
+
 ```bash
 bash swift/check-playback-safety.sh     # 0 = 通过，1 = 命中禁用写法
 ```
 
-它会检查：`UIBackgroundModes` 不得出现、`isIdleTimerDisabled = true` 不得使用、
-三条停止路径（关闭播放页 / 进入后台 / 流失败）必须都在。
-反向验证过：把 `UIBackgroundModes` 加回去，脚本立刻返回 1。
+检查：`UIBackgroundModes` 不得出现、`isIdleTimerDisabled = true` 不得使用、
+三条停止路径必须都在。反向验证过：把 `UIBackgroundModes` 加回去，脚本立刻返回 1。
 
 > 待接线：把它挂到 GitHub Actions 上（变更 `swift/**` 或 `project.yml` 时运行）。
 > 当前推送用的 token 没有 `workflow` 权限，无法创建 `.github/workflows/` 下的文件，

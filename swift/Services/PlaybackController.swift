@@ -25,8 +25,40 @@ import AVFoundation
 import AVKit
 import SwiftUI
 
+/// 音频会话的可替换封装。
+///
+/// 之所以抽出来：这次故障的核心就是"会话从不释放"，而它偏偏是最难观察的一环。
+/// 有了这层接口，测试可以断言"停止时确实调用了 deactivate"，而不是只相信代码看起来对。
+protocol AudioSessionControlling {
+    func activate() throws
+    func deactivate()
+}
+
+/// 真机使用的实现
+struct SystemAudioSession: AudioSessionControlling {
+    func activate() throws {
+        let session = AVAudioSession.sharedInstance()
+        // 注意：不要用 .longFormVideo 的 policy，tvOS 上没有这个选项。
+        // 也不要在 category 之外添加任何"后台"能力——那正是本故障的成因。
+        try session.setCategory(.playback, mode: .moviePlayback)
+        try session.setActive(true)
+    }
+
+    func deactivate() {
+        // 关键的一步。会话保持 active 就是"设备不睡"的直接原因。
+        try? AVAudioSession.sharedInstance()
+            .setActive(false, options: .notifyOthersOnDeactivation)
+    }
+}
+
 @MainActor
 final class PlaybackController: ObservableObject {
+
+    private let audioSession: AudioSessionControlling
+
+    init(audioSession: AudioSessionControlling = SystemAudioSession()) {
+        self.audioSession = audioSession
+    }
 
     /// 播放页是否呈现。只读：关闭动作必须走 `stop(reason:)`，否则又会留下
     /// 一个还在出声的播放器。
@@ -37,6 +69,12 @@ final class PlaybackController: ObservableObject {
     @Published private(set) var lastStopReason: String?
 
     private(set) var player: AVPlayer?
+    /// 我们是否真的激活过音频会话。
+    ///
+    /// 只在激活过之后才释放：对一个从未激活的会话调用 `setActive(false)` 会向系统
+    /// 广播"我要让出音频"，可能打断正在放歌的其他 App——而这次故障的修复要点本来就是
+    /// "只碰自己的东西"。
+    private var audioSessionActive = false
     private var endObserver: NSObjectProtocol?
     private var failObserver: NSObjectProtocol?
 
@@ -123,20 +161,18 @@ final class PlaybackController: ObservableObject {
     // MARK: - 音频会话
 
     private func activateAudioSession() {
-        let session = AVAudioSession.sharedInstance()
+        // 会话配置失败也要继续播：这只是路由与中断策略，不是播放的前置条件
         do {
-            // 注意：不要用 .longFormVideo 的 policy，tvOS 上没有这个选项。
-            // 也不要在 category 之外添加任何"后台"能力——那正是本故障的成因。
-            try session.setCategory(.playback, mode: .moviePlayback)
-            try session.setActive(true)
+            try audioSession.activate()
+            audioSessionActive = true
         } catch {
-            // 会话配置失败也要继续播：这只是路由与中断策略，不是播放的前置条件
+            audioSessionActive = false
         }
     }
 
     private func deactivateAudioSession() {
-        // 关键的一步。会话保持 active 就是"设备不睡"的直接原因。
-        try? AVAudioSession.sharedInstance()
-            .setActive(false, options: .notifyOthersOnDeactivation)
+        guard audioSessionActive else { return }
+        audioSession.deactivate()
+        audioSessionActive = false
     }
 }

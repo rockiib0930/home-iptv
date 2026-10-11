@@ -105,3 +105,14 @@ bash swift/check-playback-safety.sh
 
 （把它挂进 CI 需要一个带 `workflow` 权限的 token，见
 `swift/FAULT-2026-10-11-box-wont-power-off.md` 的"机器门禁"一节。）
+
+## 测试
+
+```bash
+xcodegen generate
+xcodebuild test -scheme HomeIPTV -destination 'platform=tvOS Simulator,name=Apple TV'
+```
+
+`Tests/PlaybackControllerTests.swift` 覆盖播放生命周期（开始 / 停止 / 换台 / 流失败），
+并且有一条产物级断言：构建出来的 Info.plist 里不得出现后台音频能力——
+那正是"机顶盒关不掉"的根因。改播放相关代码后请先跑它。

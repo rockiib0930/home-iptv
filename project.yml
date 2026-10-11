@@ -14,6 +14,8 @@ schemes:
         HomeIPTV: all
       parallelizeBuild: true
     test:
+      targets:
+        - HomeIPTVTests
       gatherLogsAfterCommandFailed: true
 
 targets:
@@ -42,6 +44,22 @@ targets:
         ENABLE_HARDENED_RUNTIME: YES
         SWIFT_VERSION: "6.0"
         ALWAYS_SEARCH_USER_PATHS: "NO"
+        TARGETED_DEVICE_FAMILY: "3"
+        SDKROOT: appletvos
+        SUPPORTED_PLATFORMS: appletvos appletvsimulator
+
+  HomeIPTVTests:
+    type: bundle.unit-test
+    platform: tvOS
+    sources:
+      - path: Tests
+    dependencies:
+      - target: HomeIPTV
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dushu.homeiptv.tests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "6.0"
         TARGETED_DEVICE_FAMILY: "3"
         SDKROOT: appletvos
         SUPPORTED_PLATFORMS: appletvos appletvsimulator
