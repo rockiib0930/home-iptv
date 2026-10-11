@@ -6,16 +6,33 @@
 //
 
 import SwiftUI
-import AVKit
 
 struct ChannelListView: View {
     @EnvironmentObject var store: PlaylistStore
-    @State private var presentingPlayer = false
-    @State private var player: AVPlayer?
+    @EnvironmentObject var playback: PlaybackController
 
     private let gridColumns = [
         GridItem(.adaptive(minimum: 280), spacing: 40)
     ]
+
+    /// 播放页的呈现状态。关闭一律走 `stop(reason:)`：
+    /// 遥控器按 Menu 关闭时系统只把 binding 置 false，如果这里不处理，
+    /// 播放器就会继续出声、音频会话继续存活——机顶盒跟着不休眠。
+    private var playerPresentation: Binding<Bool> {
+        Binding(
+            get: { playback.isPresenting },
+            set: { presented in
+                if !presented { playback.stop(reason: "player dismissed") }
+            }
+        )
+    }
+
+    private var streamErrorBinding: Binding<Bool> {
+        Binding(
+            get: { playback.streamError != nil },
+            set: { shown in if !shown { playback.clearStreamError() } }
+        )
+    }
 
     var body: some View {
         NavigationStack {
@@ -37,8 +54,7 @@ struct ChannelListView: View {
                     LazyVGrid(columns: gridColumns, spacing: 40) {
                         ForEach(store.filtered) { channel in
                             ChannelCard(channel: channel) {
-                                player = AVPlayer(url: channel.streamURL)
-                                presentingPlayer = true
+                                playback.play(url: channel.streamURL)
                             }
                         }
                     }
@@ -76,15 +92,24 @@ struct ChannelListView: View {
                 }
             }
         }
-        .fullScreenCover(isPresented: $presentingPlayer) {
-            if let player = player {
+        .fullScreenCover(isPresented: playerPresentation) {
+            if let player = playback.player {
                 PlayerView(player: player)
             }
         }
-        .onAppear {
-            // 每 6 小时自动刷新一次
-            Timer.scheduledTimer(withTimeInterval: store.refreshInterval, repeats: true) { _ in
-                Task { await store.refresh() }
+        .alert("播放失败", isPresented: streamErrorBinding) {
+            Button("好") { playback.clearStreamError() }
+        } message: {
+            Text(playback.streamError ?? "")
+        }
+        .task {
+            // 每 6 小时自动刷新一次。
+            // 原来是 onAppear 里创建 Timer 却从不 invalidate：每次进入页面都会
+            // 多一个永远在跑的定时器（还强引用视图）。Task 随视图消失自动取消。
+            while !Task.isCancelled {
+                try? await Task.sleep(nanoseconds: UInt64(store.refreshInterval * 1_000_000_000))
+                if Task.isCancelled { break }
+                await store.refresh()
             }
         }
     }

@@ -16,7 +16,8 @@ struct PlayerView: UIViewControllerRepresentable {
         vc.player = player
         // tvOS 上默认就是全屏体验
         vc.showsPlaybackControls = true
-        // 直播类内容隐藏进度条拖动（更像电视）
+        // 离开播放器由 PlaybackController.stop() 负责收尾：
+        // 这里不做任何"保持会话"的设置，也不设置 isIdleTimerDisabled
         player.play()
         return vc
     }

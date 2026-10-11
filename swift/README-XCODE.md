@@ -85,4 +85,23 @@ https://<你的GitHub用户名>.github.io/home-iptv/hd.m3u
 2. **收藏夹**：用 `@AppStorage` 存收藏的频道 ID，置顶显示
 3. **多订阅源**：设置页允许用户添加自己的 m3u URL
 4. **播放失败自动切源**：AVPlayer 报错时自动在同组频道里切下一个
-5. **画中画/后台播放**：tvOS 上默认支持
+5. ~~画中画/后台播放：tvOS 上默认支持~~
+   **不要做后台播放。** 2026-10-11 的"机顶盒关不掉"故障就是它引起的：
+   声明后台音频后，离开 App 声音还在，系统在音频播放期间不休眠。
+   详见 `swift/FAULT-2026-10-11-box-wont-power-off.md`。
+
+## 播放相关必须守住的三条
+
+1. **不要**在 Info.plist / project.yml 里加 `UIBackgroundModes`；
+2. **不要**用 `UIApplication.isIdleTimerDisabled` 长时间占住休眠；
+3. 所有播放都通过 `PlaybackController`，停止只走 `stop(reason:)`——
+   关闭播放页、进入后台、流结束/失败三条路径都必须收摊。
+
+提交前跑一次：
+
+```bash
+bash swift/check-playback-safety.sh
+```
+
+（把它挂进 CI 需要一个带 `workflow` 权限的 token，见
+`swift/FAULT-2026-10-11-box-wont-power-off.md` 的"机器门禁"一节。）

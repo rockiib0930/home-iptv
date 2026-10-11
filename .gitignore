@@ -1,9 +1,11 @@
-﻿# Xcode
+# Xcode
 DerivedData/
 *.xcodeproj/xcuserdata/
 *.xcworkspace/xcuserdata/
 *.xcuserstate
 build/
+# XcodeGen 由 project.yml 生成的 Info.plist（构建产物，不是源文件）
+/Info.plist
 *.app
 *.dsym
 # Python
