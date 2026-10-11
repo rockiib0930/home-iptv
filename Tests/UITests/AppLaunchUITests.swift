@@ -25,15 +25,17 @@ final class AppLaunchUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        // 标题长这样：HomeIPTV · N 个频道
-        let title = app.staticTexts.matching(
-            NSPredicate(format: "label BEGINSWITH %@", "HomeIPTV")).firstMatch
-        XCTAssertTrue(title.waitForExistence(timeout: 60),
-                      "启动后没有出现频道列表标题（可能启动即崩溃，或订阅源拉取失败）")
-
-        // 分类选择器也在，说明主界面渲染完整
-        XCTAssertTrue(app.staticTexts["分类"].exists || app.buttons["分类"].exists,
-                      "找不到分类选择器")
+        // 侧栏标题
+        XCTAssertTrue(app.staticTexts["HomeIPTV"].waitForExistence(timeout: 60),
+                      "启动后没有出现侧栏标题（可能启动即崩溃）")
+        // 侧栏分类与频道卡片都在，说明主界面渲染完整
+        XCTAssertTrue(app.buttons.matching(
+            NSPredicate(format: "label BEGINSWITH %@", "全部")).firstMatch.exists,
+                      "找不到「全部」分类")
+        XCTAssertTrue(app.buttons.matching(
+            NSPredicate(format: "label CONTAINS %@", "线路")).firstMatch
+            .waitForExistence(timeout: 30),
+                      "找不到任何频道卡片")
     }
 
     /// 本次故障修复的界面接线：打开频道 → 按遥控器 Menu 关闭 → 回到列表。
@@ -64,17 +66,7 @@ final class AppLaunchUITests: XCTestCase {
 
         let remote = XCUIRemote.shared
         let playerIsOpen = NSPredicate(format: "count == 2")
-        var opened = false
-        for _ in 0..<3 {
-            remote.press(.down)
-            remote.press(.select)
-            if XCTWaiter().wait(
-                for: [expectation(for: playerIsOpen, evaluatedWith: app.windows)],
-                timeout: 15) == .completed {
-                opened = true
-                break
-            }
-        }
+        let opened = openAnyChannel(app: app, remote: remote, probe: playerIsOpen)
         XCTAssertTrue(opened, "选中频道后播放页没有出现（焦点可能没落在频道卡片上）")
 
         remote.press(.menu)
@@ -106,17 +98,7 @@ final class AppLaunchUITests: XCTestCase {
 
         let remote = XCUIRemote.shared
         let playerIsOpen = NSPredicate(format: "count == 2")
-        var opened = false
-        for _ in 0..<3 {
-            remote.press(.down)
-            remote.press(.select)
-            if XCTWaiter().wait(
-                for: [expectation(for: playerIsOpen, evaluatedWith: app.windows)],
-                timeout: 15) == .completed {
-                opened = true
-                break
-            }
-        }
+        let opened = openAnyChannel(app: app, remote: remote, probe: playerIsOpen)
         XCTAssertTrue(opened, "选中频道后播放页没有出现")
 
         // 退到后台，再回到前台
@@ -131,5 +113,28 @@ final class AppLaunchUITests: XCTestCase {
                 timeout: 30),
             .completed,
             "离开 App 再回来时播放页仍在——说明后台没有停播（这正是机顶盒不睡的成因）")
+    }
+
+    /// 把焦点挪到频道墙上并选中一个频道。
+    ///
+    /// 版式是"左侧分类栏 + 右侧频道墙"：初始焦点在分类上，所以要先按右键进频道墙。
+    /// 焦点起点会随 tvOS 版本和左右布局细节变化，所以按几种可能顺序试，命中即返回。
+    private func openAnyChannel(app: XCUIApplication, remote: XCUIRemote,
+                                probe: NSPredicate) -> Bool {
+        let sequences: [[XCUIRemote.Button]] = [
+            [.right, .select],
+            [.right, .down, .select],
+            [.down, .select],
+            [.down, .right, .select],
+        ]
+        for sequence in sequences {
+            for button in sequence { remote.press(button) }
+            if XCTWaiter().wait(
+                for: [expectation(for: probe, evaluatedWith: app.windows)],
+                timeout: 12) == .completed {
+                return true
+            }
+        }
+        return false
     }
 }

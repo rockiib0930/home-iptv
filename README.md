@@ -50,10 +50,33 @@ README.md
 仓库 → Actions → 选 "更新直播源并发布" → Run workflow。
 等跑完（约 3-5 分钟），访问：
 ```
-https://<你的用户名>.github.io/home-iptv/index.m3u     # 全量
-https://<你的用户名>.github.io/home-iptv/hd.m3u        # 仅存活快速源（推荐）
-https://<你的用户名>.github.io/home-iptv/cn.m3u        # 中文频道
+https://<你的用户名>.github.io/home-iptv/out/index.m3u   # 全量（注意是 out/ 子目录）
 ```
+
+> 路径勘误（2026-10-11 实测）：Pages 是把**仓库根目录**作为站点发布的，
+> 所以文件在 `out/` 下，真实地址是 `…github.io/home-iptv/out/index.m3u`。
+> 之前 README 里写的 `…/index.m3u` 会返回 404。
+>
+> 另外 `hd.m3u` / `cn.m3u` 目前也是 404：`aggregate.py` 确实生成它们，
+> 但工作流里回写仓库的那一步只 `git add` 了 `index.m3u`、`summary.json`、
+> `UNSUPPORTED.md`。要在浏览器里改 `.github/workflows/update.yml` 那一行，
+> 或者用带 `workflow` 权限的 token 推送。
+
+## 客户端（swift/）2026-10-11 改版说明
+
+针对实际使用反馈做的一轮修改，都在 `swift/` 里：
+
+| 反馈 | 原因 | 处理 |
+| --- | --- | --- |
+| 没有图标 | 工程里根本没有图标资源 | 生成 tvOS 分层图标（App Icon & Top Shelf Image.brandassets），画法见 `AUTOMATION/homeiptv_make_icon.py` |
+| 界面巨丑 | 332 个频道全用远程 logo，而 logo 几乎都在 `i.imgur.com`（国内拉不到），于是整屏灰方块 | 台标改为**本地绘制**（渐变 + 简称），远程 logo 只在真能加载时覆盖；卡片重做成分层信息块 |
+| 交互不便 | 分类藏在顶部 Picker 里，进频道要点两次 | 改为常驻左侧分类栏（带数量），长按卡片可收藏或指定线路 |
+| 频道重复 | 一个频道多条源被当成多个频道 | 按 `tvg-id`/规范化名字聚合为"一个频道 + 多条线路"，列表去重 |
+| 加载缓慢 | 首屏必须等网络；订阅地址用的是国内不稳定的 CDN | 先用**内置快照**出画面再后台刷新；镜像按国内实测耗时排序（fastly → Pages → gcore → cdn），逐个回退；单次超时 10 秒 |
+| 线路播不动 | 国内很多源时好时坏 | 播放失败**自动切下一条线路**并提示；长按卡片也能手动选线路 |
+
+实测数据（兰州，2026-10-11）：fastly 1.37s / Pages 1.56s / gcore 1.88s / cdn 1.86s；
+`raw.githubusercontent.com` 12 秒超时（已从镜像列表剔除）。
 
 之后每 6 小时自动更新，无需手动操作。
 

@@ -4,6 +4,8 @@ DerivedData/
 *.xcworkspace/xcuserdata/
 *.xcuserstate
 build/
+# XcodeGen 由 project.yml 生成，仓库只保留 project.yml
+/HomeIPTV.xcodeproj
 # XcodeGen 由 project.yml 生成的 Info.plist（构建产物，不是源文件）
 /Info.plist
 *.app

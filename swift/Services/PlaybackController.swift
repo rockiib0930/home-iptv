@@ -67,8 +67,20 @@ final class PlaybackController: ObservableObject {
     @Published private(set) var streamError: String?
     /// 最近一次停止的原因（写日志/排查用）
     @Published private(set) var lastStopReason: String?
+    /// 当前播放的频道名与线路信息（播放页覆盖层用）
+    @Published private(set) var channelName: String = ""
+    @Published private(set) var sourceLabel: String = ""
+    @Published private(set) var sourceIndex: Int = 0
+    @Published private(set) var sourceCount: Int = 0
+    /// 自动换线时给用户的提示（例如"线路 1 失败，已切到线路 2"）
+    @Published private(set) var notice: String?
+    /// 播放页信息条是否显示（约 6 秒后自动淡出）
+    @Published private(set) var isShowingInfo = false
 
     private(set) var player: AVPlayer?
+    private var infoTask: Task<Void, Never>?
+    /// 当前频道的全部线路，失败时用来回退
+    private var channel: Channel?
     /// 我们是否真的激活过音频会话。
     ///
     /// 只在激活过之后才释放：对一个从未激活的会话调用 `setActive(false)` 会向系统
@@ -79,6 +91,52 @@ final class PlaybackController: ObservableObject {
     private var failObserver: NSObjectProtocol?
 
     // MARK: - 播放
+
+    /// 播放一个逻辑频道的首选线路
+    func play(channel newChannel: Channel) {
+        play(channel: newChannel, sourceIndex: 0)
+    }
+
+    /// 指定从第几条线路开始播（用户在长按菜单里选了具体线路）
+    func play(channel newChannel: Channel, sourceIndex index: Int) {
+        channel = newChannel
+        sourceCount = newChannel.sources.count
+        channelName = newChannel.name
+        notice = nil
+        startSource(at: min(max(index, 0), max(newChannel.sources.count - 1, 0)))
+    }
+
+    /// 手动/自动切到下一条线路
+    func switchSource() {
+        guard let channel else { return }
+        let next = sourceIndex + 1
+        guard next < channel.sources.count else {
+            streamError = "全部 \(channel.sources.count) 条线路都无法播放"
+            stop(reason: "no working source")
+            return
+        }
+        startSource(at: next)
+    }
+
+    private func startSource(at index: Int) {
+        guard let channel, channel.sources.indices.contains(index) else { return }
+        sourceIndex = index
+        let source = channel.sources[index]
+        sourceLabel = source.label(index: index)
+        play(url: source.url)
+        showInfo()
+    }
+
+    /// 信息条显示一会儿就收起来，不挡画面
+    private func showInfo() {
+        isShowingInfo = true
+        infoTask?.cancel()
+        infoTask = Task { [weak self] in
+            try? await Task.sleep(nanoseconds: 6_000_000_000)
+            guard !Task.isCancelled else { return }
+            self?.isShowingInfo = false
+        }
+    }
 
     func play(url: URL) {
         // 换台前先把上一路彻底停掉，避免两个 AVPlayer 同时持有一个音频会话
@@ -121,6 +179,10 @@ final class PlaybackController: ObservableObject {
         streamError = nil
     }
 
+    func clearNotice() {
+        notice = nil
+    }
+
     // MARK: - 流结束/失败
 
     /// tvOS 27 起通知名改挂在 AVPlayerItem 上；本 App 仍支持 tvOS 16，
@@ -147,10 +209,29 @@ final class PlaybackController: ObservableObject {
         ) { [weak self] note in
             let error = note.userInfo?[AVPlayerItemFailedToPlayToEndTimeErrorKey] as? Error
             Task { @MainActor in
-                // 直播源挂掉时必须收摊：死流占着音频会话同样会让设备不休眠
-                self?.streamError = error?.localizedDescription ?? "播放失败"
-                self?.stop(reason: "stream failed")
+                self?.handleFailure(error)
             }
+        }
+    }
+
+    /// 源挂掉时的处置：还有备用线路就自动切过去（国内很多源时好时坏，
+    /// 让用户手动换线体验太差），一条都不剩才报错收摊。
+    /// 注意死流占着音频会话同样会让设备不休眠，所以最后一定要 stop()。
+    private func handleFailure(_ error: Error?) {
+        guard let channel else {
+            streamError = error?.localizedDescription ?? "播放失败"
+            stop(reason: "stream failed")
+            return
+        }
+        let hasSpare = sourceIndex + 1 < channel.sources.count
+        if hasSpare {
+            let failed = sourceIndex + 1
+            notice = "线路 \(failed) 无法播放，已自动切到线路 \(failed + 1)"
+            startSource(at: sourceIndex + 1)
+            showInfo()   // 换线是要让用户看见的
+        } else {
+            streamError = error?.localizedDescription ?? "播放失败"
+            stop(reason: "stream failed")
         }
     }
 
