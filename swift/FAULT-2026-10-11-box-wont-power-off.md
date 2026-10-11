@@ -66,6 +66,54 @@ ChannelCard(channel: channel) {
 | 5 | 定时刷新由 `Timer` 改为可取消的 `Task` | `ChannelListView.swift` |
 | 6 | 直播源失败时给出提示并收摊（死流占着会话同样会让设备不休眠） | `PlaybackController.swift` |
 
+### 用的都是官方既有 API，不是自创方案
+
+排查时对照了三份"成熟做法"，结论如下。
+
+**1. Apple SDK 头文件里的官方开关（本文的主要依据）**
+
+```
+AVPlayer.h:
+  /// Indicates that the player must be paused on going to background.
+  AVPlayerAudiovisualBackgroundPlaybackPolicyPauses = 2,
+  ...
+  /// If set to AVPlayerAudiovisualBackgroundPlaybackPolicyPauses, player will
+  /// be paused on entering background.
+  @property ... audiovisualBackgroundPlaybackPolicy
+      API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), watchos(8.0), visionos(1.0));
+```
+
+也就是说"进入后台就暂停"这件事，系统本来就有专门开关。本 App 最低 tvOS 16，
+直接可用，不需要自己监听生命周期去猜时机。已设置 `= .pauses`。
+
+SDK 同处还有一句限定：`this policy only applies to items with enabled video`——
+纯音频源不在其内，所以**仍保留**进入后台的显式 `stop()` 作为兜底。
+
+**2. 同类成熟开源项目的做法（对照，不作为结论依据）**
+
+`mikehouse/Apple-TV-Player`（187★，Swift，tvOS/iOS 的 m3u IPTV 播放器，App Store 在售）：
+
+* 它的 Info.plist **确实声明了 `<key>UIBackgroundModes</key><array><string>audio</string></array>`**；
+* 其 `StreamViewModel` 里**没有任何** `AVAudioSession` / `scenePhase` / 后台处理代码。
+
+这正是本故障的配置形态：能力开着、播放器没人收尾。对 iOS 来说后台音频常被当作特性，
+但对 tvOS 的直播播放器，代价就是"离开 App 后声音还在 → 设备不睡"。所以本 App 选择：
+**不声明该能力，播放随前台结束**。
+
+**3. 其他相关 API 的可用性（查 SDK 确认，避免乱用）**
+
+* `AVPlayerViewController.updatesNowPlayingInfoCenter`：`API_UNAVAILABLE(tvos)` —— tvOS 上不能用；
+* `allowsPictureInPicturePlayback`：tvOS 14+ 可用，但它是"离开前台还出声"的另一条路径，
+  本 App 明确关掉；
+* `UIApplication.isIdleTimerDisabled`：tvOS 上**可用**，但本 App 主动不碰（见上）。
+
+### 一个刻意保留的取舍
+
+iOS 上"切后台继续放声音"对部分用户算特性。本 App 没有开这个口子，因为：
+① 需求是"保证设备能关"，② 直播播放器没有必须在后台出声的理由，
+③ 少一个能力就少一条把设备钉醒的路径。若将来确实要 iOS 后台音频，
+正确做法是按平台分别配置 plist，而不是把 tvOS 也一起打开。
+
 ### 刻意不做的事
 
 * **不**使用 `UIApplication.isIdleTimerDisabled`。它能让长时间播放时屏幕不变暗，但只要

@@ -16,6 +16,9 @@ struct PlayerView: UIViewControllerRepresentable {
         vc.player = player
         // tvOS 上默认就是全屏体验
         vc.showsPlaybackControls = true
+        // 画中画是另一条"离开前台还在出声"的路径（SDK：tvOS 14+ 可用）。
+        // 本 App 明确要求播放随前台结束，所以关掉它。
+        vc.allowsPictureInPicturePlayback = false
         // 离开播放器由 PlaybackController.stop() 负责收尾：
         // 这里不做任何"保持会话"的设置，也不设置 isIdleTimerDisabled
         player.play()

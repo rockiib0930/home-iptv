@@ -87,6 +87,13 @@ final class PlaybackController: ObservableObject {
         let item = AVPlayerItem(url: url)
         let newPlayer = AVPlayer(playerItem: item)
         newPlayer.allowsExternalPlayback = true
+        // 官方 API，语义即"进入后台就暂停"。SDK 原文（AVPlayer.h）：
+        //   Pauses: "Indicates that the player must be paused on going to background."
+        //   "If set to ...Pauses, player will be paused on entering background."
+        // 可用性：tvos(15.0)，本 App 最低 tvOS 16，因此直接可用。
+        // 注意 SDK 同处的限定："this policy only applies to items with enabled video"——
+        // 纯音频源不在其内，所以下面仍保留进入后台的显式 stop 作为兜底。
+        newPlayer.audiovisualBackgroundPlaybackPolicy = .pauses
         player = newPlayer
         streamError = nil
         activateAudioSession()
