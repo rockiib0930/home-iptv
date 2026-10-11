@@ -16,6 +16,7 @@ schemes:
     test:
       targets:
         - HomeIPTVTests
+        - HomeIPTVUITests
       gatherLogsAfterCommandFailed: true
 
 targets:
@@ -53,11 +54,31 @@ targets:
     platform: tvOS
     sources:
       - path: Tests
+        excludes:
+          # UI 测试文件有自己的目标，不能同时编进单元测试目标
+          # （否则 XCUIApplication 会在非 UI 测试进程里被调用）
+          - "UITests/**"
     dependencies:
       - target: HomeIPTV
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.dushu.homeiptv.tests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "6.0"
+        TARGETED_DEVICE_FAMILY: "3"
+        SDKROOT: appletvos
+        SUPPORTED_PLATFORMS: appletvos appletvsimulator
+
+  HomeIPTVUITests:
+    type: bundle.ui-testing
+    platform: tvOS
+    sources:
+      - path: Tests/UITests
+    dependencies:
+      - target: HomeIPTV
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dushu.homeiptv.uitests
         GENERATE_INFOPLIST_FILE: YES
         SWIFT_VERSION: "6.0"
         TARGETED_DEVICE_FAMILY: "3"

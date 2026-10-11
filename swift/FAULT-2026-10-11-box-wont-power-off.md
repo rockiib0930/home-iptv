@@ -88,6 +88,7 @@ ChannelCard(channel: channel) {
 ### 1. 单元测试 `Tests/PlaybackControllerTests.swift`（10 项）
 
 ```bash
+xcodegen generate
 xcodebuild test -scheme HomeIPTV -destination 'platform=tvOS Simulator,name=Apple TV'
 ```
 
@@ -103,6 +104,15 @@ xcodebuild test -scheme HomeIPTV -destination 'platform=tvOS Simulator,name=Appl
 这套测试在开发过程中确实抓到过一个实现缺陷：最初的 `stop()` 会在"从没播放过"的情况下
 也去释放音频会话（`setActive(false)` 会向系统广播让出音频，可能打断别的 App），
 5 个用例同时失败把它拦了下来。
+
+另有一个启动冒烟 UI 测试（`Tests/UITests/AppLaunchUITests.swift`）：App 必须能起来并
+渲染出频道列表，避免后续改动把启动打挂。
+
+**这两层测试都在 tvOS 27 模拟器上实际跑过并通过。**
+
+> 覆盖不到的一段，如实说明：「按遥控器 Menu 关闭播放页 → 停止播放」属于界面接线行为。
+> TVOS 上 `XCUIElement.tap()` 不可用，只能靠焦点导航去点卡片，写出来极其易碎；
+> 模拟器里也没有真实音频可供判断"声音是否停止"。所以这一段留在下面的真机清单里。
 
 ### 2. 静态门禁 `swift/check-playback-safety.sh`
 
