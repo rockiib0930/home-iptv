@@ -87,4 +87,49 @@ final class AppLaunchUITests: XCTestCase {
             .completed,
             "按 Menu 关闭播放页后没有回到列表——关闭路径没走到 stop()")
     }
+    /// 本次故障的核心行为：离开 App 时必须把播放收掉。
+    ///
+    /// 为什么这条能证明"机顶盒能关机"这件事的一半：设备不睡的机制是
+    /// "音频还在播 → 系统不休眠"。这条用例断言的是**离开前台后播放页确实被关掉了**
+    /// （PlaybackController.stop() 同时清播放器并释放音频会话，单元测试已在断言那两步）。
+    /// 修复前的版本回到前台时播放页仍在。
+    func testLeavingTheAppClosesPlayback() throws {
+        #if targetEnvironment(simulator)
+        throw XCTSkip("遥控器焦点路径只在真机 Apple TV 上验证（模拟器行为不同）")
+        #endif
+
+        let app = XCUIApplication()
+        app.launch()
+        let title = app.staticTexts.matching(
+            NSPredicate(format: "label BEGINSWITH %@", "HomeIPTV")).firstMatch
+        XCTAssertTrue(title.waitForExistence(timeout: 90), "频道列表没有出现")
+
+        let remote = XCUIRemote.shared
+        let playerIsOpen = NSPredicate(format: "count == 2")
+        var opened = false
+        for _ in 0..<3 {
+            remote.press(.down)
+            remote.press(.select)
+            if XCTWaiter().wait(
+                for: [expectation(for: playerIsOpen, evaluatedWith: app.windows)],
+                timeout: 15) == .completed {
+                opened = true
+                break
+            }
+        }
+        XCTAssertTrue(opened, "选中频道后播放页没有出现")
+
+        // 退到后台，再回到前台
+        remote.press(.home)
+        Thread.sleep(forTimeInterval: 4)
+        app.activate()
+
+        let backToList = NSPredicate(format: "count == 1")
+        XCTAssertEqual(
+            XCTWaiter().wait(
+                for: [expectation(for: backToList, evaluatedWith: app.windows)],
+                timeout: 30),
+            .completed,
+            "离开 App 再回来时播放页仍在——说明后台没有停播（这正是机顶盒不睡的成因）")
+    }
 }
