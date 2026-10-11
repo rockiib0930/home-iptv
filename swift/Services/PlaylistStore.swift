@@ -170,7 +170,11 @@ final class PlaylistStore: ObservableObject {
             if counts[lhs] != counts[rhs] { return (counts[lhs] ?? 0) > (counts[rhs] ?? 0) }
             return lhs < rhs
         }
-        groups = [Self.allKey, Self.favoritesKey, Self.multiSourceKey] + names
+        // 多线路分类在"实测筛选"后的列表里常常是空的（一个频道只活下来一条线），
+        // 空分类是噪音，直接不显示。
+        var fixed = [Self.allKey, Self.favoritesKey]
+        if multiSourceCount > 0 { fixed.append(Self.multiSourceKey) }
+        groups = fixed + names
     }
 
     // MARK: - 缓存与内置快照
