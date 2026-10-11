@@ -35,4 +35,56 @@ final class AppLaunchUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["分类"].exists || app.buttons["分类"].exists,
                       "找不到分类选择器")
     }
+
+    /// 本次故障修复的界面接线：打开频道 → 按遥控器 Menu 关闭 → 回到列表。
+    ///
+    /// 这个断言是实测出来的，不是猜的：在真机 Apple TV 上用
+    /// `app.debugDescription` 看过三个阶段的无障碍树——
+    ///   列表就绪：1 个 Window；按 select 后：**2 个**（多出播放页的 960x540 窗口）；
+    ///   按 Menu 后：回到 1 个。
+    /// 注意"列表元素消失"不能作为判据：被 fullScreenCover 盖住的列表在无障碍树里
+    /// 依然存在，所以原来那样写会永远等不到。
+    func testOpeningAChannelThenClosingThePlayerReturnsToTheList() throws {
+        // 这条用例依赖 tvOS 的遥控器焦点路径，而模拟器与真机的焦点起点不同
+        // （同样的 down+select 在真机上能选中频道卡片、在模拟器上不行）。
+        // 它本来就是为真机写的，所以在模拟器上明确跳过，而不是改成一条
+        // 在真机上反而不可靠的"宽容"断言。
+        #if targetEnvironment(simulator)
+        throw XCTSkip("遥控器焦点路径只在真机 Apple TV 上验证（模拟器行为不同）")
+        #endif
+
+        let app = XCUIApplication()
+        app.launch()
+
+        let title = app.staticTexts.matching(
+            NSPredicate(format: "label BEGINSWITH %@", "HomeIPTV")).firstMatch
+        XCTAssertTrue(title.waitForExistence(timeout: 90),
+                      "频道列表没有出现（可能拉取订阅源失败）")
+        XCTAssertEqual(app.windows.count, 1, "列表状态下应当只有一个窗口")
+
+        let remote = XCUIRemote.shared
+        let playerIsOpen = NSPredicate(format: "count == 2")
+        var opened = false
+        for _ in 0..<3 {
+            remote.press(.down)
+            remote.press(.select)
+            if XCTWaiter().wait(
+                for: [expectation(for: playerIsOpen, evaluatedWith: app.windows)],
+                timeout: 15) == .completed {
+                opened = true
+                break
+            }
+        }
+        XCTAssertTrue(opened, "选中频道后播放页没有出现（焦点可能没落在频道卡片上）")
+
+        remote.press(.menu)
+
+        let backToList = NSPredicate(format: "count == 1")
+        XCTAssertEqual(
+            XCTWaiter().wait(
+                for: [expectation(for: backToList, evaluatedWith: app.windows)],
+                timeout: 30),
+            .completed,
+            "按 Menu 关闭播放页后没有回到列表——关闭路径没走到 stop()")
+    }
 }

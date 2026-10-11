@@ -156,7 +156,25 @@ xcodebuild test -scheme HomeIPTV -destination 'platform=tvOS Simulator,name=Appl
 另有一个启动冒烟 UI 测试（`Tests/UITests/AppLaunchUITests.swift`）：App 必须能起来并
 渲染出频道列表，避免后续改动把启动打挂。
 
+还有一条**只在真机 Apple TV 上跑**的界面用例：打开频道 → 按遥控器 Menu 关闭 → 回到列表。
+它验证的正是"关闭播放页必须走到 stop()"这段接线——单元测试覆盖不到。
+
+断言方式是实测出来的：在真机 Apple TV 上用 `app.debugDescription` 看了三个阶段的无障碍树：
+
+| 阶段 | Window 数 |
+| --- | --- |
+| 列表就绪 | 1（Main） |
+| 按 select 打开频道 | **2**（多出播放页的 960×540 窗口） |
+| 按 Menu 关闭 | 1（Main） |
+
+注意**不能**用"列表元素消失"当判据：被 `fullScreenCover` 盖住的列表在无障碍树里依然存在
+（第一版就是这么写错的，一直等不到）。模拟器上遥控器焦点的起点与真机不同，同样的
+down+select 选不中频道卡片，所以这条用例在模拟器上明确 skip 并写明原因。
+
 **这两层测试都在 tvOS 27 模拟器上实际跑过并通过。**
+
+**并且已经在一台真实的 Apple TV（机顶盒 192.168.3.36，Apple TV 4K，tvOS 27.0）上跑通**：
+11 项单元测试 + 2 项 UI 测试全部通过（含上面那条 Menu 关闭用例）。
 
 > 覆盖不到的一段，如实说明：「按遥控器 Menu 关闭播放页 → 停止播放」属于界面接线行为。
 > TVOS 上 `XCUIElement.tap()` 不可用，只能靠焦点导航去点卡片，写出来极其易碎；

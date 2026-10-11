@@ -56,6 +56,15 @@ final class PlaybackControllerTests: XCTestCase {
         XCTAssertEqual(spy.calls, [.activate])
     }
 
+    func testPlaybackIsConfiguredToPauseInTheBackground() throws {
+        // 这是官方的表达方式（AVPlayer.audiovisualBackgroundPlaybackPolicy = .pauses），
+        // 也是"机顶盒关不掉"的第一道防线：不能只靠我们自己的通知回调。
+        let (controller, _) = makeController()
+        controller.play(url: stream)
+        let player = try XCTUnwrap(controller.player)
+        XCTAssertEqual(player.audiovisualBackgroundPlaybackPolicy, .pauses)
+    }
+
     func testPlayDoesNotStartWithoutAnAudioSessionEither() {
         // 会话配置失败不是播放的前置条件；直播照样要能播
         let spy = SpyAudioSession()
