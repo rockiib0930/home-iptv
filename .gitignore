@@ -17,6 +17,8 @@ __pycache__/
 # out/
 *.ips
 *.png
+# 例外：App 图标/Top Shelf 是工程必需的资源，必须入库
+!swift/Resources/Assets.xcassets/**
 *.jpg
 *.jpeg
 .DS_Store
