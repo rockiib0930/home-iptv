@@ -1,20 +1,20 @@
 {
   "tested_from": "本机（用户所在网络）",
-  "tested_at": 1791907470,
-  "elapsed_seconds": 50,
+  "tested_at": 1791929135,
+  "elapsed_seconds": 49,
   "total_sources": 332,
   "playable": 63,
   "playable_fast": 63,
   "playable_channels": 63,
   "failure_reasons": {
-    "URLError": 56,
-    "HTTP 404": 47,
+    "URLError": 57,
     "HTTP 403": 128,
+    "HTTP 404": 47,
     "ConnectionResetError": 3,
     "分片拉取失败": 29,
     "HTTP 502": 1,
     "HTTP 523": 1,
-    "TimeoutError": 4
+    "TimeoutError": 3
   },
   "playable_channel_names": [
     "ABN China",
