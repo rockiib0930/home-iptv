@@ -1,6 +1,6 @@
 {
   "tested_from": "本机（用户所在网络）",
-  "tested_at": 1792084420,
+  "tested_at": 1792106079,
   "elapsed_seconds": 49,
   "total_sources": 332,
   "playable": 55,
@@ -8,15 +8,15 @@
   "playable_channels": 55,
   "failure_reasons": {
     "URLError": 59,
-    "HTTP 404": 46,
-    "HTTP 403": 130,
+    "HTTP 404": 47,
+    "HTTP 403": 129,
     "HTTP 500": 1,
     "ConnectionResetError": 3,
-    "分片拉取失败": 27,
+    "分片拉取失败": 26,
     "HTTP 502": 1,
     "HTTP 567": 5,
     "HTTP 523": 1,
-    "TimeoutError": 4
+    "TimeoutError": 5
   },
   "playable_channel_names": [
     "ABN China",
@@ -24,11 +24,11 @@
     "Angel TV Chinese",
     "Anhui TV",
     "Baicheng TV",
-    "Bread TV",
     "CCTV+ 1",
     "CCTV+ 2",
     "CCTV-1",
     "CCTV-12",
+    "CCTV-3",
     "CCTV-4 America",
     "CCTV-9",
     "CGTN",
