@@ -1,15 +1,15 @@
 {
   "tested_from": "本机（用户所在网络）",
-  "tested_at": 1792163398,
+  "tested_at": 1792185061,
   "elapsed_seconds": 49,
   "total_sources": 332,
-  "playable": 65,
-  "playable_fast": 64,
-  "playable_channels": 64,
+  "playable": 63,
+  "playable_fast": 63,
+  "playable_channels": 63,
   "failure_reasons": {
-    "URLError": 56,
-    "HTTP 404": 47,
+    "URLError": 58,
     "HTTP 403": 128,
+    "HTTP 404": 47,
     "ConnectionResetError": 3,
     "HTTP 500": 1,
     "分片拉取失败": 27,
@@ -18,7 +18,6 @@
     "TimeoutError": 3
   },
   "playable_channel_names": [
-    "ABN China",
     "Ando TV",
     "Angel TV Chinese",
     "Anhui TV",
@@ -26,7 +25,6 @@
     "Bread TV",
     "CCTV+ 1",
     "CCTV+ 2",
-    "CCTV-1",
     "CCTV-12",
     "CCTV-3",
     "CCTV-4 America",
