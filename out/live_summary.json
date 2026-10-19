@@ -1,20 +1,20 @@
 {
   "tested_from": "本机（用户所在网络）",
-  "tested_at": 1792423357,
+  "tested_at": 1792445024,
   "elapsed_seconds": 49,
   "total_sources": 332,
-  "playable": 64,
-  "playable_fast": 59,
-  "playable_channels": 59,
+  "playable": 65,
+  "playable_fast": 65,
+  "playable_channels": 65,
   "failure_reasons": {
-    "URLError": 56,
-    "HTTP 404": 48,
-    "HTTP 403": 130,
+    "URLError": 59,
+    "HTTP 404": 47,
+    "HTTP 403": 129,
     "ConnectionResetError": 3,
-    "分片拉取失败": 26,
     "HTTP 500": 2,
+    "分片拉取失败": 23,
     "HTTP 502": 1,
-    "TimeoutError": 2
+    "TimeoutError": 3
   },
   "playable_channel_names": [
     "ABN China",
@@ -45,6 +45,7 @@
     "Dongguan Comprehensive News Channel",
     "Dragon TV International",
     "Guangxi Variety & Travel Channel",
+    "Guangzhou TV",
     "Harbin Comprehensive News Channel",
     "Harbin Movie Channel",
     "Hebei TV",
