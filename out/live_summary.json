@@ -1,20 +1,20 @@
 {
   "tested_from": "本机（用户所在网络）",
-  "tested_at": 1792466684,
+  "tested_at": 1792488345,
   "elapsed_seconds": 49,
   "total_sources": 332,
-  "playable": 62,
-  "playable_fast": 62,
-  "playable_channels": 62,
+  "playable": 64,
+  "playable_fast": 64,
+  "playable_channels": 64,
   "failure_reasons": {
     "URLError": 56,
-    "HTTP 404": 48,
     "HTTP 403": 128,
+    "HTTP 404": 49,
     "ConnectionResetError": 3,
+    "分片拉取失败": 28,
     "HTTP 500": 2,
-    "分片拉取失败": 30,
     "HTTP 502": 1,
-    "TimeoutError": 2
+    "TimeoutError": 1
   },
   "playable_channel_names": [
     "ABN China",
@@ -25,6 +25,8 @@
     "Bread TV",
     "CCTV+ 1",
     "CCTV+ 2",
+    "CCTV-1",
+    "CCTV-12",
     "CCTV-4 America",
     "CCTV-9",
     "CGTN",
